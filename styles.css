@@ -3,7 +3,6 @@
 
 body {
     font-family: 'Muli', sans-serif;
-    color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
     line-height: 1.58;
     letter-spacing: -.003em;
@@ -13,4 +12,44 @@ body {
 
 a {
     text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    /* Dark theme styles go here */
+    body {
+
+        color: rgb(255, 255, 255);
+        background-color: rgb(32, 32, 32);
+    }
+
+    a:link,
+    a:visited {
+        color: rgb(147, 110, 196);
+    }
+
+    a:link:active,
+    a:visited:active {
+        color: rgb(207, 185, 236);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+
+    /* Light theme styles go here */
+    body {
+
+        color: rgb(32, 32, 32);
+        background-color: white;
+    }
+
+    a:link,
+    a:visited {
+        color: rgb(83, 49, 128);
+    }
+
+    a:link:active,
+    a:visited:active {
+        color: rgb(155, 117, 204);
+    }
 }
