@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+:root {
+    --white: #ffffff;
+    --green: #C3D394;
+    --orange: #ffbb2a;
+    --red: #F45B69;
+    --blue: #7D70BA;
+    --grey: #353238;
+}
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    font-size: 20px;
+
+    color: var(--grey);
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.page {
+    padding: 0 20%;
+    height: 100vh;
+    width: auto;
+}
+
+h1 {
+    margin: 0 0 0% 0;
+    padding: 10% 0% 0% 0%;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+b {
+    font-weight: bold;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0% 10px 0% 0%;
+}
+
+a:hover {
+    text-decoration: solid;
+    color: var(--red);
+}
+
+::selection {
+
+    background: var(--orange);
+}
+
+#footer {
+    background-color: var(--red);
+    color: var(--textDark);
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+
+/*@media (prefers-color-scheme: dark) {
+
+    // Dark theme styles go here
+    body {
+
+        color: rgb(255, 255, 255);
+        background-color: rgb(32, 32, 32);
+    }
+
+    a:link,
+    a:visited {
+        color: rgb(147, 110, 196);
+    }
+
+    a:link:active,
+    a:visited:active {
+        color: rgb(207, 185, 236);
+    }
+}*/
