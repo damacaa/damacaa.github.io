@@ -17,7 +17,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.58;
     letter-spacing: -.003em;
-    font-size: 20px;
+    font-size: 1vmax;
 
     color: var(--grey);
     background-color: var(--white);
@@ -28,14 +28,14 @@ body {
 
 
 .page {
+    width: auto;
     padding: 0 20%;
     height: 100vh;
-    width: auto;
 }
 
 h1 {
-    margin: 0 0 0% 0;
-    padding: 10% 0% 0% 0%;
+    margin: 0;
+    padding: 0;
     font-size: 2em;
     font-weight: normal;
 }
@@ -65,8 +65,10 @@ a:hover {
     background-color: var(--red);
     color: var(--textDark);
     padding: 20px;
-    margin: 0px;
+    margin: 0;
     text-align: center;
+    width: auto;
+    height: auto;
 }
 
 #footer p {
