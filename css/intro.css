@@ -1,38 +1,29 @@
 #intro {
     text-align: left;
-    display: flex;
     background-color: var(--green);
-}
-
-
-
-#intro p {
-    padding: 0% 0% 0% 0%;
+    height: 100vh;
 }
 
 #introText {
-
-    padding: 20% 0 20% 0;
     width: 100%;
-    height: auto;
-
+    height: 80%;
     z-index: 1;
+    padding: 20% 0 0 0;
 }
 
 #introText h1 {
-    margin-bottom: 10%;
+    padding-bottom: 2em;
 }
 
 #introImage {
     width: auto;
     height: auto;
-    position: relative;
 }
 
 #introImage img {
 
     position: absolute;
-    right: 0;
+    right: 20%;
     bottom: 0;
     z-index: 0;
     height: 20vmin;
@@ -40,7 +31,9 @@
 
 #introLinks {
     display: flex;
-    align-items: left;
+    align-items: right;
+    flex-direction: row-reverse;
+    padding: 1em;
 }
 
 #introLinks a {
