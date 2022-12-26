@@ -16,19 +16,12 @@
 body {
     font-family: 'Quicksand', sans-serif;
     letter-spacing: -.003em;
-    font-size: 2.5vmin;
+    font-size: 2.5vh;
 
     color: var(--grey);
     background-color: var(--white);
     margin: 0;
     padding: 0;
-}
-
-
-
-.page {
-    width: auto;
-    padding: 0 20%;
 }
 
 h1 {
@@ -56,6 +49,20 @@ a:hover {
 ::selection {
 
     background: var(--orange);
+}
+
+@media screen and (orientation:portrait) {
+    .page {
+        width: auto;
+        padding: 0 5%;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .page {
+        width: auto;
+        padding: 0 20%;
+    }
 }
 
 
