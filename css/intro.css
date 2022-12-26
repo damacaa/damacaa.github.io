@@ -6,9 +6,9 @@
 
 #introText {
     width: 100%;
-    height: 80%;
+    height: auto;
     z-index: 1;
-    padding: 20% 0 0 0;
+    padding: 20% 0 20% 0;
 }
 
 #introText h1 {
@@ -32,11 +32,12 @@
 #introLinks {
     display: flex;
     align-items: right;
+    text-align: right;
     flex-direction: row-reverse;
     padding: 1em;
 }
 
 #introLinks a {
     text-decoration: none;
-    margin: 0% 1em 0% 0%;
+    margin: 0% 0% 0% 3%;
 }
