@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/games.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/floatingWindow.css">
+
+    <script src="js/floatingWindows.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
@@ -48,10 +51,12 @@
 
                 <div id="gameList">
 
-                    <a title="itch.io" href="https://damaca.itch.io/same-boat" target="_blank">
+                    <div>
                         <div class="game">
-                            <img src="/img/projects/same_boat.gif" alt="We're in the Same Boat">
-                            <h3>We're in the Same Boat</h3>
+                            <a title="itch.io" href="https://damaca.itch.io/same-boat" target="_blank">
+                                <img src="/img/projects/same_boat.gif" alt="We're in the Same Boat">
+                                <h3>We're in the Same Boat</h3>
+                            </a>
                             <p>Puzzle game made in Unity based on a classic riddle. Planning to release it for mobile
                                 platforms soon. <br>
                                 I implemented all of the game mechanics and logic of the game, I made a
@@ -60,61 +65,119 @@
                                 moves to complete it.
                             </p>
                         </div>
-                    </a>
+                    </div>
 
-                    <a title="GitHub" href="https://github.com/damacaa/inverse-animation-editing" target="_blank">
+                    <div>
                         <div class="game">
-                            <img src="/img/projects/inverse-animation.gif" alt="Inverse animation framework">
-                            <h3>My bachelor's Thesis</h3>
+                            <a title="GitHub" href="https://github.com/damacaa/inverse-animation-editing"
+                                target="_blank">
+                                <img src="/img/projects/inverse-animation.gif" alt="Inverse animation framework">
+                                <h3>My bachelor's Thesis</h3>
+                            </a>
                             <p>A framework for inverse animation editing based on differentiable simulation.<br>
                                 Includes a C++ differentiable physics engine, some machine learning in Python and also
                                 required connecting this tools to Unity via a native plugin.</p>
                         </div>
-                    </a>
+                    </div>
 
-                    <a title="itch.io" href="https://bubblygames.itch.io/pond-platoon" target="_blank">
+                    <div>
                         <div class="game">
-                            <img src="/img/projects/pond_platoon.gif" alt="Pond Platoon">
-                            <h3>Pond Platoon</h3>
+                            <a title="itch.io" href="https://bubblygames.itch.io/pond-platoon" target="_blank">
+                                <img src="/img/projects/pond_platoon.gif" alt="Pond Platoon">
+                                <h3>Pond Platoon</h3>
+                            </a>
                             <p>A 3D tower defense game made in Unity.<br>
                                 I implemented the main mechanics as well as the
                                 procedural world generation and enemy AI and path-finding. I learnt a lot about teamwork
                                 and collaborating with a multidisciplinary team.</p>
                         </div>
-                    </a>
-
-                    <a title="itch.io" href="https://damaca.itch.io/soft-body-simulation-in-unity" target="_blank">
-                        <div class="game">
-                            <img src="/img/projects/tale_of_the_sea.gif" alt="Cloth simulation">
-                            <h3>Intro to 3D animation</h3>
-                            <p>In my third year of university, I attended a subject about 3D animation. We learnt the
-                                basics, modelled a character and a small stage and implemented some basic mechanics in
-                                Unity. Finally, we learned about procedural animation with physics and implemented our
-                                own soft-body physics simulations in Unity.</p>
-                        </div>
-                    </a>
-
-                    <a title="itch.io" href="https://damaca.itch.io/ruins-of-light" target="_blank">
-                        <div class="game">
-                            <img src="/img/projects/ruins_of_light.gif" alt="Ruins of Light">
-                            <h3>Ruins of Light</h3>
-                            <p>A multiplayer web game I made a few years ago with Phaser3.<br>
-                                It was my first game as a
-                                game programmer, and it's a mess. But I learnt a lot from it, since I built both the
-                                client in JavaScript and the server with Java.</p>
-                        </div>
-                    </a>
-
-
-                    <div class="game">
-                        <img src="/img/projects/tuercas.gif" alt="Tuercas">
-                        <h3>My first game ever</h3>
-                        <p>Back when I was 17, I made this game with zero knowledge of game development. I had just
-                            played Machinarium, and I was in love with its aesthetics, so I tried to emulate it. I
-                            made the sprites with water colors, animated them with After Effects and pasted them
-                            into a pre-made Unity project.</p>
                     </div>
 
+                    <div>
+
+                        <div class="game">
+                            <a title="itch.io" href="https://damaca.itch.io/soft-body-simulation-in-unity"
+                                target="_blank">
+                                <img src="/img/projects/tale_of_the_sea.gif" alt="Cloth simulation">
+                                <h3>Intro to 3D animation</h3>
+                            </a>
+                            <p>In my third year of university, I attended a subject about 3D animation. We learnt
+                                the basics about 3D animation, modelled a character and a small stage and implemented
+                                some
+                                basic mechanics in Unity. Finally, we learned about procedural animation with physics
+                                and
+                                implemented our own soft-body physics simulations in Unity.</p>
+
+
+                            <div style="padding:20px;">
+                                <input type="button" id="btClick" class="btClickHere" value="Learn more..." />
+                            </div>
+
+                            <div id="centerDIV">
+                                <!-- The element which will float at the center of the screen -->
+                                <div class="divFloat">
+                                    <input type="button" id="btClose" class="btClose" value="X" />
+
+                                    <h3>Intro to 3D animation</h3>
+
+                                    <p>Check out this video I made to showcase my 3D models, animations and cloth
+                                        simulation. </p>
+
+                                    <iframe width=100% height=50% src="https://www.youtube.com/embed/IolONsiah0U"
+                                        title="YouTube video player" frameborder="0" style=" border-radius: 7px;"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+
+                                    <p>As well as part of the design process of the project. </p>
+
+                                    <img src="/img/projects/kid/turnaround.png">
+                                    <img src="/img/projects/kid/faces.png">
+                                    <img src="/img/projects/kid/poses.png">
+                                    <img src="/img/projects/kid/value.png">
+                                    <img src="/img/projects/kid/colors.png">
+                                    <img src="/img/projects/kid/beauty.png">
+                                    <img src="/img/projects/kid/thumbnails.png"
+                                        style="box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);">
+                                    <img src="/img/projects/kid/escenario.png"
+                                        style="box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);">
+                                    <img src="/img/projects/kid/escenario2.png"
+                                        style="box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div>
+                        <div class="game">
+                            <a title="itch.io" href="https://damaca.itch.io/ruins-of-light" target="_blank">
+                                <img src="/img/projects/ruins_of_light.gif" alt="Ruins of Light">
+                                <h3>Ruins of Light</h3>
+                            </a>
+                            <p>A multiplayer web game I made a few years ago with Phaser3.<br>
+                                It was my first game as a
+                                game programmer, and it's a mess. But I learnt a lot from it, since I built both
+                                the
+                                client in JavaScript and the server with Java.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="game">
+                            <img src="/img/projects/tuercas.gif" alt="Tuercas">
+                            <h3>My first game ever</h3>
+                            <p>Back when I was 17, I made this game with zero knowledge of game development. I
+                                had just
+                                played Machinarium, and I was in love with its aesthetics, so I tried to emulate
+                                it. I
+                                made the sprites with water colors, animated them with After Effects and pasted
+                                them
+                                into a pre-made Unity project.</p>
+                        </div>
+                    </div>
 
 
                 </div>

@@ -3,7 +3,7 @@
 }
 
 #projects h1 {
-    width: 100%;
+    width: auto;
     height: auto;
     z-index: 1;
     padding: 10% 0 5% 0;
