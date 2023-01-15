@@ -58,3 +58,21 @@
 .game a {
     color: var(--grey);
 }
+
+
+.learnMoreButton {
+    font-family: 'Quicksand', sans-serif;
+    font-size: auto;
+
+    color: var(--grey);
+
+    background-color: #00000000;
+    border: none;
+
+    border-radius: 7px 7px 7px 7px;
+}
+
+.learnMoreButton:hover {
+
+    background-color: #00000015;
+}
