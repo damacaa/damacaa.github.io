@@ -12,7 +12,7 @@
 
 #projects p {
     z-index: 1;
-    padding-bottom: 2em;
+    font-size: 0.65em;
     margin: 0;
 }
 
@@ -75,4 +75,26 @@
 .learnMoreButton:hover {
 
     background-color: #00000015;
+}
+
+.projectTags {
+    width: auto;
+    height: auto;
+    display: flex;
+
+    flex-direction: row-reverse;
+    margin: 5%;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.projectTags p {
+    font-size: 0.6em;
+    text-align: center;
+
+    background-color: rgba(119, 110, 102, 0.075);
+    border-radius: 10px;
+    padding: 0.2em 0.5em;
+    margin: 100px;
+    display: flex;
 }
