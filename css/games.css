@@ -9,31 +9,16 @@
     padding: 0 0 10% 0;
 }
 
-#projects h1 {
-    width: auto;
-    height: auto;
-    z-index: 1;
-    padding: 10% 0 5% 0;
-    margin: 0;
-}
-
-#projects p {
-    z-index: 1;
-    margin: 0;
-}
-
 .game {
     width: 350px;
     height: auto;
+
     margin: 10px;
-    color: var(--textLight);
+
     background-color: var(--white);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border-radius: 15px;
-
-    font-size: 0.7em;
-    line-height: 1.3em;
 
     position: relative;
 }
@@ -52,23 +37,24 @@
 .gameDescription {
     padding: 0 18px;
     margin-bottom: 4em;
+    text-align: center;
 }
 
 .game h3 {
-    margin: 1em 0.3em 0.5em 0.3em;
+
     font-size: 1em;
     text-align: center;
 }
 
-.game p {
-    text-align: justify;
-}
+
 
 .game a {
     color: var(--grey);
 }
 
-.game li {}
+.game ul {
+    margin-bottom: 0;
+}
 
 
 .learnMoreButton {
@@ -112,6 +98,5 @@
     background-color: rgba(119, 110, 102, 0.075);
     border-radius: 10px;
     padding: 0.2em 0.5em;
-    margin: 100px;
     display: flex;
 }

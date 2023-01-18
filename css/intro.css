@@ -8,26 +8,14 @@
     width: 100%;
     height: auto;
     z-index: 1;
-    padding: 20% 0 20% 0;
+    padding: 20% 0 0 0;
 }
 
 #introText h1 {
     padding-bottom: 2em;
 }
 
-#introImage {
-    width: auto;
-    height: auto;
-}
 
-#introImage img {
-
-    position: absolute;
-    right: 20%;
-    bottom: 0;
-    z-index: 0;
-    height: 20vmin;
-}
 
 #introLinks {
     display: flex;

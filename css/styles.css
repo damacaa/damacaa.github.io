@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    font-size: 2.5vh;
+    font-size: 18px;
 
     color: var(--grey);
     background-color: var(--white);
@@ -24,8 +24,14 @@ body {
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: 2em;
     font-weight: normal;
+    margin: 0;
+    padding: 1em 0 1em 0;
+}
+
+p {
+    margin: 0;
 }
 
 b {
@@ -62,27 +68,6 @@ a:hover {
 
 
 
-
-
-/*@media (prefers-color-scheme: dark) {
-
-    // Dark theme styles go here
-    body {
-
-        color: rgb(255, 255, 255);
-        background-color: rgb(32, 32, 32);
-    }
-
-    a:link,
-    a:visited {
-        color: rgb(147, 110, 196);
-    }
-
-    a:link:active,
-    a:visited:active {
-        color: rgb(207, 185, 236);
-    }
-}*/
 
 /* width */
 ::-webkit-scrollbar {
