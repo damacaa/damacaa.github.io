@@ -9,12 +9,14 @@
     }
 })*/
 
-function OpenGameInfo(name) {
-    var gameInfo = document.getElementById(name + 'Info');
+let lastDivShown;
+function ShowFloatingDiv(name) {
+    var gameInfo = document.getElementById(name);
     gameInfo.style.display = 'block';
+    lastDivShown = name;
 }
 
-function CloseGameInfo(name) {
-    var gameInfo = document.getElementById(name + 'Info');
+function CloseFloatingDiv() {
+    var gameInfo = document.getElementById(lastDivShown);
     gameInfo.style.display = 'none';
 }
