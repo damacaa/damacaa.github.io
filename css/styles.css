@@ -21,13 +21,11 @@ body {
     background-color: var(--white);
     margin: 0;
     padding: 0;
-
 }
 
 h1 {
     font-size: 1.6em;
     font-weight: normal;
-    margin: 0;
 }
 
 b {
@@ -37,8 +35,6 @@ b {
 a {
     color: var(--blue);
     text-decoration: none;
-    font-size: 1em;
-    margin: 0% 0% 0% 0%;
 }
 
 a:hover {
@@ -47,7 +43,6 @@ a:hover {
 }
 
 ::selection {
-
     background: var(--orange);
 }
 
