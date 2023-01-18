@@ -2,6 +2,13 @@
     background-color: var(--orange);
 }
 
+#gameList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 10% 0;
+}
+
 #projects h1 {
     width: auto;
     height: auto;
@@ -12,35 +19,39 @@
 
 #projects p {
     z-index: 1;
-    font-size: 0.65em;
     margin: 0;
 }
 
-#gameList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 0 10% 0;
-}
-
-
 .game {
-    width: 300px;
+    width: 350px;
     height: auto;
     margin: 10px;
-    padding: 0;
     color: var(--textLight);
     background-color: var(--white);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border-radius: 15px;
+
+    font-size: 0.7em;
+    line-height: 1.3em;
+
+    position: relative;
+}
+
+.game:hover {
+    scale: 1.03;
+    transition-duration: 100ms;
 }
 
 .game img {
     width: 100%;
     height: 230px;
-    margin: 0;
     object-fit: cover;
+}
+
+.gameDescription {
+    padding: 0 18px;
+    margin-bottom: 4em;
 }
 
 .game h3 {
@@ -50,8 +61,6 @@
 }
 
 .game p {
-    padding: 0 20px 20px 20px;
-    font-size: 0.8em;
     text-align: justify;
 }
 
@@ -59,10 +68,19 @@
     color: var(--grey);
 }
 
+.game li {}
+
 
 .learnMoreButton {
     font-family: 'Quicksand', sans-serif;
-    font-size: auto;
+    font-size: 1em;
+    padding: auto;
+    margin-top: 1em;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+
 
     color: var(--grey);
 
@@ -73,7 +91,6 @@
 }
 
 .learnMoreButton:hover {
-
     background-color: #00000015;
 }
 
@@ -89,7 +106,7 @@
 }
 
 .projectTags p {
-    font-size: 0.6em;
+    font-size: 0.9em;
     text-align: center;
 
     background-color: rgba(119, 110, 102, 0.075);
