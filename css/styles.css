@@ -52,6 +52,8 @@ a:hover {
     background: var(--orange);
 }
 
+
+
 @media screen and (orientation:portrait) {
     .page {
         width: auto;
@@ -63,6 +65,7 @@ a:hover {
     .page {
         width: auto;
         padding: 0 20%;
+        scroll-snap-type: y mandatory;
     }
 }
 
@@ -71,7 +74,7 @@ a:hover {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0px;
 }
 
 /* Track */

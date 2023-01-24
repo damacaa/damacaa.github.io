@@ -45,8 +45,8 @@
             <div id="aboutMe">
                 <canvas id="gameOfLifeCanvas" width="100px" onclick="world.RandomStart();">
                 </canvas>
-                <script src="/js/GameOfLife/mundo.js"></script>
-                <script src="/js/GameOfLife/celula.js"></script>
+                <script src="/js/GameOfLife/world.js"></script>
+                <script src="/js/GameOfLife/cell.js"></script>
                 <script src="/js/GameOfLife/GameOfLife.js"></script>
                 <div id="aboutMeText">
                     I have been fascinated by the process of creating video games since I was a kid, playing Pokemon
@@ -67,7 +67,6 @@
 
             <div id="projects" class="page">
                 <h1>Recent projects</h1>
-
                 <div id="gameList">
 
                     <!--SAME BOAT-->
@@ -85,7 +84,7 @@
 
                                 <div>
                                     <input type="button" id="btClick" class="learnMoreButton"
-                                        onclick="ShowFloatingDiv('SameBoatInfo')" value="Learn more..." />
+                                        onclick="ShowFloatingDiv('same_boat')" value="Learn more..." />
                                 </div>
                             </div>
 
@@ -93,64 +92,6 @@
                                 <p>GameJam</p>
                                 <p>C#</p>
                                 <p>Unity</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="centerDIV" id="SameBoatInfo">
-                        <div class="divFloat">
-                            <input type="button" id="btClose" class="btClose" onclick="CloseFloatingDiv()" value="X" />
-
-                            <div class="divContent">
-                                <div class="divCover">
-                                    <iframe width="960" height="600"
-                                        src="https://damacaa.github.io/same-boat/Build/WebGL/index.html" frameborder="0"
-                                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe>
-                                </div>
-
-                                <h1 style="text-align: center;">We're in the Same Boat</h1>
-                                <div style="padding: 0%; display: flex; gap: 20px;">
-                                    <div style="flex: 1;">
-                                        <p>This game was made for the <a href="https://itch.io/jam/game-off-2022"
-                                                target="_blank">Game
-                                                Off 2022</a> hosted by
-                                            GitHub. The game did pretty well, thanks to the fact that it was very
-                                            polished, and that we had a brilliant graphic designer on our team who
-                                            didn't have any experience making art for games but did an amazing job
-                                            anyways. We got the 23rd position overall.</p>
-
-                                        <ul>
-                                            <li>I implemented all of the game mechanics and logic of the game.</li>
-                                            <li>I made a
-                                                system to easily create puzzles with a set of characters and rules.</li>
-                                            <li>I implemented a
-                                                solver to automatically ensure that every level can be solved and get
-                                                the
-                                                optimal
-                                                set of
-                                                moves to complete it.</li>
-                                            <li>I made a custom water shader.</li>
-                                            <li>I procedurally animated the characters.</li>
-                                        </ul>
-
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        style="flex: 0.25; height: 100%; background-color: var(--orange); padding: 20px 10px;  border-radius: 7px;">
-                                        <p style="line-height: 1.2em;">
-                                            <b>Engine:</b><br>
-                                            Unity<br><br>
-                                            <b>Size of the team:</b><br>
-                                            4<br><br>
-                                            <b>Time:</b><br>
-                                            1 month<br><br>
-                                            <b>My role:</b><br>
-                                            Game programmer and designer<br><br>
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -168,6 +109,11 @@
                                     Includes a C++ differentiable physics engine, some machine learning in Python and
                                     also
                                     required connecting this tools to Unity via a native plugin.</p>
+                                <div>
+                                    <input type="button" id="btClick" class="learnMoreButton"
+                                        onclick="ShowFloatingDiv('TFG_Memoria_Daniel_Marti_Casanova.pdf')"
+                                        value="Learn more..." />
+                                </div>
                             </div>
                             <div class="projectTags">
                                 <p>Machine learning</p>
@@ -190,7 +136,7 @@
 
                                 <div>
                                     <input type="button" id="btClick" class="learnMoreButton"
-                                        onclick="ShowFloatingDiv('PondPlatoonInfo')" value="Learn more..." />
+                                        onclick="ShowFloatingDiv('pond_platoon')" value="Learn more..." />
                                 </div>
 
                             </div>
@@ -204,101 +150,6 @@
                         </div>
                     </div>
 
-                    <div class="centerDIV" id="PondPlatoonInfo">
-                        <div class="divFloat">
-                            <input type="button" id="btClose" class="btClose" onclick="CloseFloatingDiv()" value="X" />
-
-                            <div class="divContent">
-                                <div class="divCover">
-                                    <iframe width="960" height="600" src="https://www.youtube.com/embed/GKhpRWcBeyY"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe>
-                                </div>
-
-                                <h1 style="text-align: center;">Pond Platoon</h1>
-                                <div style="padding: 0%; display: flex; gap: 20px;">
-                                    <div style="flex: 1;">
-                                        <p>Pond Platoon was developed for a university degree subject. The team
-                                            consisted of 6 people: an artist, two game designers, two game programmers,
-                                            and a project manager. We had four months to build a casual browser game,
-                                            although we still had other classes, so we couldn't spend 100% of our time
-                                            working on this.<br>
-
-                                        <ul style="text-align: left;">
-                                            <li>I implemented the main mechanics of the game.</li>
-                                            <li>I created a system to generate procedural worlds and implemented a
-                                                path-finding
-                                                algorithm for the enemies.</li>
-                                            <li>I learnt a lot about teamwork
-                                                and collaborating with a multidisciplinary team.</li>
-                                            <li>I assisted the art team in creating visually appealing visual effects
-                                                like particles or animations and the overall look and feel of the game.
-                                            </li>
-                                        </ul>
-
-                                        <img src="img/projects/PondPlatoon/gameplay_4.gif" style="width: 100%;">
-                                        We decided we wanted to make a tower-defense game, and we thought that
-                                        making it in 3D and having the player rotate the world to continuously check
-                                        on the enemies would be a nice twist. I was tasked with building the worlds,
-                                        as well as the main gameplay mechanics.<br>
-
-                                        <div
-                                            style="display: flex; flex-flow: wrap; width: 100%; padding: 2em 0; margin: auto;">
-
-                                            <img src="img/projects/PondPlatoon/gameplay_1.gif"
-                                                style="width: 100%; margin: 0;">
-                                            <img src="img/projects/PondPlatoon/gameplay_2.gif"
-                                                style="width: 50%; margin: 0;">
-                                            <img src="img/projects/PondPlatoon/gameplay_3.gif"
-                                                style="width: 50%; margin: 0;">
-                                        </div>
-
-                                        Building the procedurally generated worlds meant having to learn about 3D
-                                        Perlin noise and generating voxel meshes. Also, having infinite worlds
-                                        required building an enemy AI capable of traveling through them. The default
-                                        pathfinding in Unity didn't quite work for this application, so I built a
-                                        path-finding system from scratch, using the A* algorithm.<br>
-
-                                        <div
-                                            style="display: flex; flex-flow: wrap; width: 100%; padding: 2em 0; margin: auto;">
-
-                                            <img src="img/projects/PondPlatoon/procedural_1.gif"
-                                                style="width: 50%; margin: 0;">
-                                            <img src="img/projects/PondPlatoon/procedural_2.gif"
-                                                style="width: 50%; margin: 0;">
-                                            <img src="img/projects/PondPlatoon/procedural_3.gif"
-                                                style="width: 50%; margin: 0;">
-                                            <img src="img/projects/PondPlatoon/procedural_4.gif"
-                                                style="width: 50%; margin: 0;">
-
-                                        </div>
-
-
-                                        Watch the trailer above or visit <a
-                                            href="https://bubblygames.itch.io/pond-platoon" target="_blank">Itch.io</a>
-                                        to play it for free.
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        style="flex: 0.25; height: 100%; background-color: var(--orange); padding: 20px 10px;  border-radius: 7px;">
-                                        <p style="line-height: 1.2em;">
-                                            <b>Engine:</b><br>
-                                            Unity<br><br>
-                                            <b>Size of the team:</b><br>
-                                            6<br><br>
-                                            <b>Time:</b><br>
-                                            4 months<br><br>
-                                            <b>My role:</b><br>
-                                            Programmer<br><br>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!--SOFT BODY SIMULATION-->
                     <div>
                         <div class=" game">
@@ -308,14 +159,12 @@
                                 <h3>Intro to 3D animation</h3>
                             </a>
                             <div class="gameDescription">
-                                <p>In my third year of university, I attended a subject about 3D animation. We
-                                    learnt the basics about 3D animation, modelled a character and a small stage and
-                                    implemented some basic mechanics in Unity. Finally, we learned about procedural
-                                    animation with physics and implemented our own soft-body physics simulations in
-                                    Unity.</p>
+                                <p>I designed a character, modelled and animated it and imported it to Unity. Then I
+                                    built my own soft-body simulation animations and added them to the character and the
+                                    enviroment.</p>
                                 <div>
                                     <input type="button" id="btClick" class="learnMoreButton"
-                                        onclick="ShowFloatingDiv('SoftBodyInfo')" value="Learn more..." />
+                                        onclick="ShowFloatingDiv('soft_body')" value="Learn more..." />
                                 </div>
 
                             </div>
@@ -332,98 +181,7 @@
                         </div>
                     </div>
 
-                    <div class="centerDIV" id="SoftBodyInfo">
-                        <div class="divFloat">
-                            <input type="button" id="btClose" class="btClose" onclick="CloseFloatingDiv()" value="X" />
 
-                            <div class="divContent">
-                                <div class="divCover">
-                                    <iframe width="960" height="600" src="https://www.youtube.com/embed/IolONsiah0U"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe>
-                                </div>
-
-                                <h1 style="text-align: center;">Intro to 3D animation</h1>
-                                <div style="padding: 0%; display: flex; gap: 20px;">
-                                    <div style="flex: 1;">
-                                        <p>We were once asked to design a character, build its background, and make the
-                                            required
-                                            concept art for it. After that, we would model and animate it, bring it to
-                                            life
-                                            in
-                                            Unity, and build a cloth simulation to make it more interesting.
-                                            <br><br>
-                                            Completing a project like this is a complex process that requires a variety
-                                            of
-                                            skills, and one of the most challenging and rewarding aspects of the process
-                                            for
-                                            me
-                                            was designing and developing the main character of this game. This involved
-                                            not
-                                            only
-                                            drawing and sketching the character, but also modeling it in 3D, texturing
-                                            it to
-                                            give it the desired appearance, and programming its movement and
-                                            interactions
-                                            with
-                                            the game world.
-                                            <br><br>
-                                            One of the most challenging parts of the process was creating a realistic
-                                            cloth
-                                            simulation for the character's cape. It required me to have a deep
-                                            understanding
-                                            of
-                                            physics and how cloth behaves to create a believable and visually impressive
-                                            effect.
-                                            It was a lot of trial and error to get the right balance between realism and
-                                            performance, but in the end, it was worth it.
-                                            <br><br>
-                                            Overall, the process of designing and developing the main character was a
-                                            challenging but incredibly rewarding experience. It allowed me to combine my
-                                            artistic skills with my programming knowledge to create a truly immersive
-                                            and
-                                            believable character that players could connect with and care about. It was
-                                            a
-                                            great
-                                            learning experience.
-                                            <br><br>
-                                        </p>
-
-                                        <div>
-
-                                            <img src="/img/projects/kid/turnaround.png">
-                                            <img src="/img/projects/kid/faces.png">
-                                            <img src="/img/projects/kid/poses.png">
-                                            <img src="/img/projects/kid/value.png">
-                                            <img src="/img/projects/kid/colors.png">
-                                            <img src="/img/projects/kid/beauty.png">
-                                            <img src="/img/projects/kid/thumbnails.png"
-                                                style="box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);">
-                                            <img src="/img/projects/kid/escenario.png"
-                                                style="box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);">
-                                            <img src="/img/projects/kid/escenario2.png"
-                                                style="box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);">
-                                        </div>
-
-
-                                    </div>
-
-                                    <div
-                                        style="flex: 0.25; height: 100%; background-color: var(--orange); padding: 20px 10px;  border-radius: 7px;">
-                                        <p style="line-height: 1.2em;">
-                                            <b>Engine:</b><br>
-                                            Unity<br><br>
-                                            <b>Size of the team:</b><br>
-                                            1<br><br>
-                                            <b>Time:</b><br>
-                                            2 months<br><br>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <!--RUINS OF LIGHT-->
                     <div>
@@ -473,33 +231,38 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
-                <p style="padding-bottom: 50px;">I will be uploading more projects soon, but meanwhile you can check
-                    the
+                <p style="padding-bottom: 50px; text-align: center;">I will be uploading more projects soon, but
+                    meanwhile you can check the
                     rest in my
                     <a href="https://damaca.itch.io/">Itch.io</a> and
                     <a href="https://github.com/damacaa">GitHub</a>.
                 </p>
 
+                <!--Learn more windows-->
+                <div class="centerDIV" id="projectPageWindow">
+                    <div class="divFloat">
+                        <div class="divContent">
+                            <input type="button" id="btClose" onclick="CloseFloatingDiv()" value="X" />
+                            <iframe id="projectPageiFrame"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
 
             <div id="codeSamples" class="page">
                 <h1>Code samples</h1>
                 <div class="pieceOfCode">
                     <h3>River crossing puzzle solver using A* algorithm</h3>
-                    <iframe src="/codeSamples/sample.html"> </iframe>
+                    <iframe src="/codeSamples/same_boat_code_sample.html"> </iframe>
                 </div>
 
+                <div class="pieceOfCode">
+                    <h3>Backward Euler cloth simulation</h3>
+                    <iframe src="/codeSamples/physics_engine_code_sample.html"> </iframe>
+                </div>
             </div>
-
-
-
-
 
         </div>
 

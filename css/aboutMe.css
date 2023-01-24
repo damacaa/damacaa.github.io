@@ -13,6 +13,10 @@
     overflow-y: scroll;
 }
 
+#aboutMe img {
+    margin-top: 50px;
+}
+
 #aboutMeText {
     position: absolute;
     top: 50%;
