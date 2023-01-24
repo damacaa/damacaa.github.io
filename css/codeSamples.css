@@ -5,6 +5,10 @@
     padding-bottom: 3%;
 }
 
+#codeSamples h1 {
+    color: var(--orange);
+}
+
 .pieceOfCode {
     width: 80%;
     height: 80vh;
@@ -15,6 +19,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border-radius: 15px;
+    margin-bottom: 50px;
 }
 
 .pieceOfCode h3 {

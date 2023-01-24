@@ -9,14 +9,24 @@
     }
 })*/
 
-let lastDivShown;
+
 function ShowFloatingDiv(name) {
-    var gameInfo = document.getElementById(name);
+    var gameInfo = document.getElementById("projectPageWindow");
     gameInfo.style.display = 'block';
-    lastDivShown = name;
+
+    var iframe = document.getElementById("projectPageiFrame");
+    if (name.includes(".")) {
+        iframe.src = "/projects/" + name;
+    } else {
+        iframe.src = "/projects/" + name + ".html";
+
+    }
 }
 
 function CloseFloatingDiv() {
-    var gameInfo = document.getElementById(lastDivShown);
+    var gameInfo = document.getElementById("projectPageWindow");
     gameInfo.style.display = 'none';
+
+    var iframe = document.getElementById("projectPageiFrame");
+    iframe.src = "";
 }
