@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/aboutMe.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/floatingWindow.css">
+    <link rel="stylesheet" href="css/carousel.css">
 
     <script src="js/floatingWindows.js"></script>
 
@@ -255,7 +256,7 @@
 
             <div id="codeSamples" class="page">
                 <h1>Code samples</h1>
-                <div class="pieceOfCode">
+                <!--<div class="pieceOfCode">
                     <h3>River crossing puzzle solver using A* algorithm</h3>
                     <iframe src="/codeSamples/same_boat_code_sample.html"> </iframe>
                 </div>
@@ -263,8 +264,50 @@
                 <div class="pieceOfCode">
                     <h3>Backward Euler cloth simulation</h3>
                     <iframe src="/codeSamples/physics_engine_code_sample.html"> </iframe>
+                </div>-->
+
+
+
+                <div class="slider">
+                    <div class="slides">
+
+                        <div id="slide-1">
+                            <div class="pieceOfCode">
+                                <h3>River crossing puzzle solver using A* algorithm</h3>
+                                <iframe src="/codeSamples/same_boat_code_sample.html"> </iframe>
+                            </div>
+                        </div>
+
+                        <div id="slide-2">
+                            <div class="pieceOfCode">
+                                <h3>Backward Euler cloth simulation</h3>
+                                <iframe src="/codeSamples/physics_engine_code_sample.html"> </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="slideButtons">
+                        <a href="#slide-1">1</a>
+                        <a href="#slide-2">2</a>
+                    </div>
+
+                    <script>
+                        /*window.addEventListener("hashchange", function () {
+                            window.scrollTo(window.scrollX, window.scrollY - window.innerHeight * 0.1);
+                            //window.scrollTo({ top: window.scrollY - window.innerHeight * 0.15, behavior: 'smooth' });
+                        });*/
+
+                        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                            anchor.addEventListener('click', function (e) {
+                                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                                    behavior: "smooth", block: "center"
+                                });
+                            });
+                        });
+                    </script>
                 </div>
             </div>
+
 
         </div>
 

@@ -10,16 +10,16 @@
 }
 
 .pieceOfCode {
-    width: 80%;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
     margin: auto;
     padding: 0;
     color: var(--textLight);
     background-color: var(--grey);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    border-radius: 15px;
     margin-bottom: 50px;
+    border-radius: 15px;
 }
 
 .pieceOfCode h3 {
