@@ -24,10 +24,10 @@
             <div style="flex: 1;">
                 <p>This game was made for the <a href="https://itch.io/jam/game-off-2022" target="_blank">Game
                         Off 2022</a> hosted by
-                    GitHub. The game did pretty well, thanks to the fact that it was very
+                    GitHub. It did pretty well, thanks to the fact that it was very
                     polished, and that we had a brilliant graphic designer on our team who
                     didn't have any experience making art for games but did an amazing job
-                    anyways. We got the 23rd position overall.</p>
+                    anyways. We got the 23rd position overall.
 
                 <ul>
                     <li>I implemented all of the game mechanics and logic of the game.</li>
@@ -43,6 +43,53 @@
                     <li>I procedurally animated the characters.</li>
                 </ul>
 
+                The goal of this project was to make a game that felt very polished. As a side project, we didn't
+                have much time to spend on it, so we made sure to make something small that we knew we could finish.
+
+                The river-crossing riddle has been coded in such a way that it requires creative thinking and
+                problem-solving skills, making it an enjoyable game for players of all ages. The game's visuals and
+                sound effects complete the package, adding to the overall experience and making it a great game for
+                everyone.
+
+                <h2>Gameplay</h2>
+
+                <img src="../img/projects/SameBoat/same_boat_gameplay1.gif">
+
+                Even though this game was originally built for PC, we knew that we wanted to bring it to smartphones,
+                where we think it would shine. So I built the controls around dragging and dropping and spent a lot of
+                time perfecting the feel of it. I iterated many times until I was happy with how smooth, intuitive, and
+                reliable the controls were.<br>
+
+                <img src="../img/projects/SameBoat/same_boat_gameplay2.gif">
+
+                Having the option to undo a move is very important in a game like this. Having to restart the level
+                after making a mistake would be very frustrating for the players. So, from the beginning, the game logic
+                was designed to easily be able to undo and redo movements as many times as necessary.<br>
+
+                <h2>Level design</h2>
+
+                I designed the levels, and to do that, I looked at the original puzzle and some popular variations.
+                There are a few versions of the original crossing river riddle, each with new rules that completely
+                change the game. The first levels are just an adaptation of these different versions. Same rules but
+                with different characters.<br>
+
+                Once I had the rules implemented, I started building new levels mixing rules from different puzzles, and
+                adding new characters. The result was that once the player had learned the basics, the possibilities
+                were endless. So much so, that we are currently building an automatic puzzle generator capable of
+                creating new levels by mixing the current ones.<br>
+
+                <img src="../img/projects/SameBoat/same_boat_level_config.png">
+
+                When creating new levels it's crucial to have a quick way to determine whether a level can be finished.
+                If I tried to do it manually and found a level that I couldn't beat, I wouldn't be able to determine for
+                sure if the difficulty was too high for me or if the level itself was impossible to solve. That's why I
+                used machine learning, the A* algorithm to be concrete, to build a script that could solve any puzzle.
+                This allows me to completely automate the process of designing levels, as well as find the optimal steps
+                to solve any puzzle.<br>
+
+
+                </p>
+
                 <br><br><br><br>
 
                 </p>
@@ -52,13 +99,13 @@
                 style="flex: 0.25; height: 100%; background-color: var(--orange); padding: 20px 10px;  border-radius: 7px;">
                 <p style="line-height: 1.2em;">
                     <b>Engine:</b><br>
-                    Unity<br><br>
+                    Unity<br>
                     <b>Size of the team:</b><br>
-                    4<br><br>
+                    4<br>
                     <b>Time:</b><br>
-                    1 month<br><br>
+                    1 month<br>
                     <b>My role:</b><br>
-                    Game programmer and designer<br><br>
+                    Game programmer and designer<br>
                 </p>
             </div>
         </div>

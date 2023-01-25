@@ -48,6 +48,12 @@ a:hover {
     color: var(--red);
 }
 
+br {
+    display: block;
+    content: "";
+    margin-bottom: 1.5em;
+}
+
 ::selection {
     background: var(--orange);
 }

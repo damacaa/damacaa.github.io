@@ -22,12 +22,11 @@ input {
 
 
 #btClose {
-    margin: 0 auto;
+
     background-color: var(--red);
 
     width: 50px;
     height: 50px;
-    padding: 10px 10px;
 
     color: var(--white);
     text-align: center;
@@ -39,6 +38,7 @@ input {
     border-radius: 100px;
 
     position: absolute;
+    right: 25%;
     scale: 2;
 
     transition-duration: 100ms;
@@ -80,6 +80,8 @@ input {
 
     text-align: justify;
 
+    transition-duration: 100ms;
+
 }
 
 .divContent img {
@@ -100,5 +102,9 @@ input {
         height: 90%;
         width: auto;
         margin: 5%;
+    }
+
+    #btClose {
+        right: 5%;
     }
 }
