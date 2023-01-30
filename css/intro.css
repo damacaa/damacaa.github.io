@@ -21,11 +21,13 @@
     display: flex;
     align-items: right;
     text-align: right;
+    gap: 2%;
     flex-direction: row-reverse;
-    padding: 1em;
+    padding: 1em 0;
 }
 
 #introLinks a {
     text-decoration: none;
-    margin: 0% 0% 0% 3%;
+    margin: 0;
+    font-size: 1.1em;
 }
