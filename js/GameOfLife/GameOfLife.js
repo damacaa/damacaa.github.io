@@ -4,6 +4,7 @@ let canvas = document.getElementById("gameOfLifeCanvas");
 let contexto = canvas.getContext("2d");
 let lastWidth = canvas.width;
 
+
 window.addEventListener('resize', resizeCanvas, false);
 
 function resizeCanvas() {

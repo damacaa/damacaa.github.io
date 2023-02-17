@@ -1,21 +1,23 @@
 #intro {
     text-align: left;
     background-color: var(--green);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #introText {
     width: 100%;
     height: auto;
     z-index: 1;
-    padding: 20% 0 0 0;
+    padding: 20% 0 10% 0;
 }
 
 #introText h1 {
     padding-bottom: 2em;
 }
 
-
+#downloadButton {
+    margin-top: 1em;
+}
 
 #introLinks {
     display: flex;
@@ -30,4 +32,18 @@
     text-decoration: none;
     margin: 0;
     font-size: 1.1em;
+    padding: 0.2em 0.5em;
+
+    border-color: var(--grey);
+    border-style: solid;
+    border-width: var(--border-width);
+    border-radius: var(--border-radius);
+
+    color: var(--grey);
+    background-color: var(--yellow);
+}
+
+#introLinks a:hover {
+    color: var(--yellow);
+    background-color: var(--red);
 }

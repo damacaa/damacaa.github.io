@@ -1,12 +1,11 @@
 #codeSamples {
     background-color: var(--blue);
-    color: var(--white);
-    padding-top: 0%;
+    color: var(--yellow);
     padding-bottom: 3%;
 }
 
 #codeSamples h1 {
-    color: var(--orange);
+    color: var(--grey);
 }
 
 .pieceOfCode {
@@ -19,7 +18,12 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin-bottom: 50px;
-    border-radius: 15px;
+    border-radius: var(--border-radius-big);
+
+    border-color: var(--grey);
+    border-style: solid;
+    border-width: var(--border-width);
+
 }
 
 .pieceOfCode h3 {

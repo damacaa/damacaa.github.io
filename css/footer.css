@@ -1,45 +1,81 @@
 #footer {
     background-color: var(--grey);
     color: var(--green);
-    padding: 20px;
+    padding: 30px 0 100px 0;
     margin: 0;
-    text-align: center;
+    text-align: left;
     width: auto;
 }
 
-#footer p {
-    margin: 0;
-    font-size: 1em;
+#footerEmail {
+    background-color: var(--green);
+    margin-bottom: 30px;
+    transition-duration: 100ms;
 }
+
+#footerEmail:hover {
+    background-color: var(--red);
+    color: var(--green);
+    scale: 1.1;
+}
+
 
 #footerLinks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 
-    padding: 1em;
+
     gap: 20px;
 
-    width: auto;
-
-
-    mix-blend-mode: difference;
 }
 
 #footerLinks a {
     text-decoration: none;
     margin: 0;
-    width: 5%;
+
+    border-color: var(--grey);
+    border-style: solid;
+    border-width: var(--border-width);
+    border-radius: var(--border-radius);
+
+    transition-duration: 100ms;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+
+
 }
 
-@media screen and (orientation:portrait) {
-    #footerLinks a {
-        width: 15%;
-    }
+#footerLinks a:hover {
+    scale: 1.1;
 }
 
+
+#footerItch {
+    background-color: var(--red);
+}
+
+#footerGit {
+    background-color: var(--orange);
+}
+
+#footerLinkdn {
+    background-color: var(--blue);
+}
 
 #footerLinks img {
-    height: auto;
-    width: 90%;
+    padding: 0.5em;
+
+    width: 2em;
+    aspect-ratio: 1/1;
+
+    margin: auto;
+
+    mix-blend-mode: luminosity;
+
+    filter: brightness(0.1);
+    filter: saturate(0);
 }

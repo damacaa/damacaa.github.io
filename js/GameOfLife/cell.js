@@ -1,3 +1,4 @@
+
 function Celula(life, x, y, sizeX, sizeY) {
   this.life = life;
   this.nextLife = life;
@@ -36,15 +37,23 @@ function Celula(life, x, y, sizeX, sizeY) {
   this.Draw = function () {
     //Actualiza la vida de la celula y la pinta en función de si está viva
     this.life = this.nextLife;
+    let color;
+
     if (this.life == 1) {
-      contexto.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--red');
+      color = getComputedStyle(document.documentElement).getPropertyValue('--blue');
     } else {
-      contexto.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--grey');
+      color = getComputedStyle(document.documentElement).getPropertyValue('--red');
     }
+
+    contexto.fillStyle = color;
     contexto.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--grey');
 
     contexto.fillRect(this.x, this.y, this.sizeX, this.sizeY);
-    //contexto.strokeRect(this.x, this.y, this.sizeX, this.sizeY);
+    /*let lineWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--border-width')) / 2;
+    contexto.lineWidth = lineWidth;
+
+    if (lineWidth > 0)
+      contexto.strokeRect(this.x, this.y, this.sizeX, this.sizeY);*/
   }
 
   this.ProcessInput = function () {

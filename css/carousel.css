@@ -15,8 +15,7 @@
 }
 
 .slides::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    height: 14px;
     background: var(--grey);
     border-radius: 10px;
 }
@@ -46,7 +45,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: 30px 0 10px 0;
+    padding: 0px 0 15px 0;
 
 }
 
@@ -54,12 +53,15 @@
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;
-    color: var(--orange);
-    background: var(--grey);
+    color: var(--grey);
+    background: var(--orange);
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: var(--border-radius);
+    border-color: var(--grey);
+    border-style: solid;
+    border-width: var(--border-width);
     margin: 0 0 0.5rem 0;
     position: relative;
     margin: 10px 0;
@@ -71,7 +73,8 @@
 }
 
 #slideButtons>a:hover {
-    background: #222;
+    color: var(--yellow);
+    background-color: var(--red);
 }
 
 #slideButtons>a:focus {
