@@ -4,23 +4,28 @@
 
 #gameList {
     display: flex;
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 0 10% 0;
 }
 
 .game {
-    width: 350px;
+    width: 325px;
     height: auto;
 
-    margin: 10px;
 
-    background-color: var(--white);
+
+    background-color: var(--yellow);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: var(--border-radius-big);
 
     position: relative;
+
+    border-color: var(--grey);
+    border-style: solid;
+    border-width: var(--border-width);
 }
 
 .game:hover {
@@ -32,6 +37,10 @@
     width: 100%;
     height: 230px;
     object-fit: cover;
+
+    border-bottom-style: solid;
+    border-color: var(--grey);
+    border-width: var(--border-width);
 }
 
 .gameDescription {
@@ -41,8 +50,6 @@
 }
 
 .game h3 {
-
-    font-size: 1em;
     text-align: center;
 }
 
@@ -58,10 +65,12 @@
 
 
 .learnMoreButton {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1em;
-    padding: auto;
-    margin-top: 1em;
+    font-family: var(--main-font);
+    font-size: 1.1em;
+    font-weight: 600;
+
+    padding: 0.2em 1em;
+    margin: 1em 0;
     position: absolute;
     left: 50%;
     text-align: center;
@@ -73,11 +82,18 @@
     background-color: #00000000;
     border: none;
 
-    border-radius: 7px 7px 7px 7px;
+    border-radius: var(--border-radius);
+
+    border-color: var(--grey);
+    border-style: solid;
+    border-width: var(--border-width);
+
+    background-color: var(--orange);
 }
 
 .learnMoreButton:hover {
-    background-color: #00000015;
+    background-color: var(--red);
+    color: var(--yellow);
 }
 
 .projectTags {
@@ -86,17 +102,23 @@
     display: flex;
 
     flex-direction: row-reverse;
-    margin: 5%;
+    padding: 5%;
     flex-wrap: wrap;
     gap: 3px;
+
+
 }
 
 .projectTags p {
     font-size: 0.9em;
     text-align: center;
 
-    background-color: rgba(119, 110, 102, 0.075);
-    border-radius: 10px;
+    background-color: var(--green);
+    border-radius: var(--border-radius);
     padding: 0.2em 0.5em;
     display: flex;
+
+    border-color: var(--grey);
+    border-style: solid;
+    border-width: var(--border-width);
 }
