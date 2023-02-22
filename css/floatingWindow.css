@@ -34,7 +34,8 @@ input {
     border-width: var(--border-width);
     border-radius: var(--border-radius);
 
-    position: absolute;
+    position: fixed;
+    z-index: 11;
     right: 20%;
     scale: 1.5;
 

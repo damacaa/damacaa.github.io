@@ -22,6 +22,7 @@
     border-radius: var(--border-radius-big);
 
     position: relative;
+    z-index: 2;
 
     border-color: var(--grey);
     border-style: solid;
