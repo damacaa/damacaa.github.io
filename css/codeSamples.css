@@ -13,8 +13,8 @@
     height: 100%;
     margin: auto;
     padding: 0;
-    color: var(--textLight);
-    background-color: var(--grey);
+    color: var(--grey);
+    background-color: var(--orange);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin-bottom: 50px;
@@ -27,7 +27,6 @@
 }
 
 .pieceOfCode h3 {
-    margin: 1em 0.3em 0.5em 0.3em;
     font-size: 1em;
     text-align: center;
 }
@@ -46,4 +45,14 @@
 
 pre {
     font-size: 12px;
+}
+
+.code {
+    color: var(--yellow);
+    background-color: var(--grey);
+    padding: 3px;
+}
+
+.code pre {
+    tab-size: 4;
 }
