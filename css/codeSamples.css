@@ -56,3 +56,8 @@ pre {
 .code pre {
     tab-size: 4;
 }
+
+.code ::selection {
+    background: var(--red);
+    color: var(--grey);
+}
