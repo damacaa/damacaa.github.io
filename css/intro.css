@@ -1,25 +1,25 @@
 #intro {
     text-align: left;
-    background-color: #ffffff00;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 #introText {
-    width: 100%;
-    height: auto;
-    z-index: 1;
-    padding: 20% 0 10% 0;
+    padding: 30% 0 0 0;
+    font-size: auto;
 }
 
-#introText h1 {
-    padding-bottom: 2em;
-}
+#introText h1 {}
 
 #downloadButton {
     margin-top: 1em;
 }
 
 #introLinks {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    z-index: 100;
+
     display: flex;
     align-items: right;
     text-align: right;
@@ -46,4 +46,14 @@
 #introLinks a:hover {
     color: var(--yellow);
     background-color: var(--red);
+}
+
+@media screen and (orientation:portrait) {
+    #intro img {
+        display: none;
+    }
+
+    #introLinks {
+        right: 5%;
+    }
 }

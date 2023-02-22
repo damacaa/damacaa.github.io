@@ -25,8 +25,10 @@
         <div id="bubble-wrapper"> </div>
         <script src="js/bubbles.js"></script>
 
-        <div id="intro" class="page" style="border-bottom-width: var(--border-width);">
+        <div id="intro" class="page" style="margin: 0;">
 
+            <div class="pageBackground" style="z-index: -2; background-color: var(--green); margin: 0;">
+            </div>
 
             <div id="introLinks">
                 <a href="https://www.linkedin.com/in/danielmarticasanova/">LinkedIn</a>
@@ -38,6 +40,8 @@
                             src="/img/icons/linkedin_icon.png"></a>-->
             </div>
 
+            <!--<p>Or download my resume:</p>
+            <a href="pdf/Daniel_Martí_CV.pdf" download>Download</a>-->
             <div id="introText">
 
                 <h1>Hello :)</h1>
@@ -46,19 +50,23 @@
                 <p>Want to contact? Send me a message at: <a href="mailto: dmarticasanova@gmail.com"
                         style="font-weight: 900;">dmarticasanova@gmail.com</a></p>
 
-                <!--<p>Or download my resume:</p>
-                <a href="pdf/Daniel_Martí_CV.pdf" download>Download</a>-->
 
                 <button type="submit" class="outline" id="downloadButton"
                     onclick="window.open('pdf/Daniel_Martí_CV.pdf')">Download
                     my CV!</button>
 
+
+                <img src=" /img/pixel_art.png"
+                    style="height: 20vh; position: fixed; bottom: 0; right: 100px; z-index: -1;" alt="">
+
             </div>
+
         </div>
 
-        <div id="aboutMe">
+        <div id="aboutMe" class="page">
 
 
+            <!---->
             <div id="aboutMeText" class="outline">
                 <h1 class="sectionHeader" style="background-color: var(--green);">About me</h1>
 
@@ -69,7 +77,7 @@
                 solving hard problems and building clean and maintainable code. I continuously spend my time
                 learning about new design patterns, algorithms, or new technologies that help me build better games.
                 <br><br>
-                <ul style="width: 60%">
+                <ul style="margin-bottom: 100px; text-align: left;">
                     <li><b>Programming languages:</b>
                         C++, C#, Python, JavaScript.</li>
                     <li><b>Software:</b> Unity, Unreal Engine
@@ -95,10 +103,9 @@
                     </li>
 
                 </ul>
-                <img src=" /img/pixel_art.png" style="height: 20vh; float:right;" alt="">
             </div>
 
-            <div id="gameOfLife">
+            <div class="pageBackground">
                 <canvas id="gameOfLifeCanvas" onclick="world.RandomStart();">
                 </canvas>
                 <script src="/js/GameOfLife/world.js"></script>
@@ -328,6 +335,7 @@
                     <a href="#slide-1">1</a>
                     <a href="#slide-2">2</a>
                 </div>
+
 
                 <script>
                     /*window.addEventListener("hashchange", function () {
