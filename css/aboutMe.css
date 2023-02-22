@@ -1,5 +1,5 @@
 #aboutMe {
-    width: 100%;
+
 
     min-height: 100vh;
 
@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
 
+
 }
 
 #aboutMe img {
@@ -21,7 +22,7 @@
 }
 
 #aboutMeText {
-    margin: 5% 20%;
+    margin: 5% 5%;
     width: auto;
 
     background-color: var(--yellow);
@@ -33,9 +34,13 @@
 
 
     text-align: justify;
-    font-size: 1em;
+    font-size: 0.8em;
 
     z-index: 3;
+}
+
+#aboutMeText ul {
+    width: 60%;
 }
 
 @media screen and (orientation:portrait) {
@@ -45,6 +50,10 @@
 
     #aboutMe img {
         display: none;
+    }
+
+    #aboutMeText ul {
+        width: 80%;
     }
 }
 
@@ -56,6 +65,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    background-color: var(--white);
 }
 
 #aboutMe canvas {
