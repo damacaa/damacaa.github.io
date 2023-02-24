@@ -4,7 +4,7 @@
 
 #gameList {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 0 10% 0;
@@ -27,11 +27,17 @@
     border-color: var(--grey);
     border-style: solid;
     border-width: var(--border-width);
+    box-shadow: 0 var(--shadowHeight) 0 currentColor;
+
+    transition-duration: 100ms;
 }
 
 .game:hover {
-    scale: 1.03;
-    transition-duration: 100ms;
+    transition-duration: 50ms;
+
+    box-shadow: 0 0 0 var(--grey);
+
+    transform: translateY(var(--shadowHeight));
 }
 
 .game img {
@@ -46,7 +52,7 @@
 
 .gameDescription {
     padding: 0 18px;
-    margin-bottom: 4em;
+    margin-bottom: 0em;
     text-align: center;
 }
 
@@ -66,36 +72,14 @@
 
 
 .learnMoreButton {
-    font-family: var(--main-font);
-    font-size: 1.1em;
-    font-weight: 600;
 
     padding: 0.2em 1em;
     margin: 1em 0;
-    position: absolute;
-    left: 50%;
-    text-align: center;
-    transform: translateX(-50%);
 
-
-    color: var(--grey);
-
-    background-color: #00000000;
-    border: none;
-
-    border-radius: var(--border-radius);
-
-    border-color: var(--grey);
-    border-style: solid;
-    border-width: var(--border-width);
-
+    position: relative;
     background-color: var(--orange);
 }
 
-.learnMoreButton:hover {
-    background-color: var(--red);
-    color: var(--yellow);
-}
 
 .projectTags {
     width: auto;

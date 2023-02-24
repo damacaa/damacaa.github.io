@@ -32,9 +32,9 @@
             </div>
 
             <div id="introLinks">
-                <a href="https://www.linkedin.com/in/danielmarticasanova/">LinkedIn</a>
-                <a href="https://github.com/damacaa">GitHub</a>
-                <a href="https://damaca.itch.io/">Itch.io</a>
+                <a class="button" href="https://www.linkedin.com/in/danielmarticasanova/">LinkedIn</a>
+                <a class="button" href="https://github.com/damacaa">GitHub</a>
+                <a class="button" href="https://damaca.itch.io/">Itch.io</a>
                 <!--<a href="https://damaca.itch.io/"><img src="/img/icons/itch_icon.png"></a>
                     <a href="https://github.com/damacaa"><img src="/img/icons/github_icon.png"></a>
                     <a href="https://www.linkedin.com/in/danielmarticasanova/"><img
@@ -52,7 +52,7 @@
                         style="font-weight: 900;">dmarticasanova@gmail.com</a></p>
 
 
-                <button type="submit" class="outline" id="downloadButton"
+                <button type="submit" class="outline button" id="downloadButton"
                     onclick="window.open('pdf/Daniel_Martí_CV.pdf')">Download
                     my CV!</button>
 
@@ -130,7 +130,7 @@
                             </p>
 
                             <div>
-                                <input type="button" id="btClick" class="learnMoreButton"
+                                <input type="button" class="button learnMoreButton"
                                     onclick="ShowFloatingDiv('same_boat')" value="Learn more..." />
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                                 also
                                 required connecting this tools to Unity via a native plugin.</p>
                             <div>
-                                <input type="button" id="btClick" class="learnMoreButton"
+                                <input type="button" class="button learnMoreButton"
                                     onclick="ShowFloatingDiv('TFG_Memoria_Daniel_Marti_Casanova.pdf')"
                                     value="Learn more..." />
                             </div>
@@ -181,7 +181,7 @@
                             <p>A 3D tower defense game about frogs.</p>
 
                             <div>
-                                <input type="button" id="btClick" class="learnMoreButton"
+                                <input type="button" class="button learnMoreButton"
                                     onclick="ShowFloatingDiv('pond_platoon')" value="Learn more..." />
                             </div>
 
@@ -208,7 +208,7 @@
                                 built my own soft-body simulation animations and added them to the character and the
                                 enviroment.</p>
                             <div>
-                                <input type="button" id="btClick" class="learnMoreButton"
+                                <input type="button" class="button learnMoreButton"
                                     onclick="ShowFloatingDiv('soft_body')" value="Learn more..." />
                             </div>
 
@@ -290,25 +290,13 @@
         <div id="projectPageWindow">
             <div id="projectPageBackground"></div>
             <div id="projectPageContent">
-                <input type="button" id="btClose" onclick="CloseFloatingDiv()" value="X" />
+                <input type="button" class="button" id="btClose" onclick="CloseFloatingDiv()" value="X" />
                 <iframe id="projectPageiFrame"></iframe>
             </div>
         </div>
 
-        <div id="codeSamples" class="page">
+        <!--<div id="codeSamples" class="page">
             <h1 class="sectionHeader" style="background-color: var(--orange);">Code samples</h1>
-            <!--<div class="pieceOfCode">
-                    <h3>River crossing puzzle solver using A* algorithm</h3>
-                    <iframe src="/codeSamples/same_boat_code_sample.html"> </iframe>
-                </div>
-
-                <div class="pieceOfCode">
-                    <h3>Backward Euler cloth simulation</h3>
-                    <iframe src="/codeSamples/physics_engine_code_sample.html"> </iframe>
-                </div>-->
-
-
-
             <div class="slider">
                 <div class="slides">
 
@@ -328,8 +316,8 @@
                 </div>
 
                 <div id="slideButtons">
-                    <a href="#slide-1">1</a>
-                    <a href="#slide-2">2</a>
+                    <a class="button" href="#slide-1">1</a>
+                    <a class="button" href="#slide-2">2</a>
                 </div>
 
 
@@ -348,34 +336,38 @@
                     });
                 </script>
             </div>
-        </div>
+        </div>-->
 
 
     </div>
 
-    <div id="footer" style="display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 20px; align-self: center;">
+    <div id="footer" style=" padding: 2% 0 3% 0">
 
-        <img src="/img/avatar-icon.png" style="border-radius: var(--border-radius); align-self: center; width:  256px;">
+        <div id="bussinessCard" class="outline">
 
+            <h1 class="sectionHeader" id="cardHeader">Bussiness card (Get in touch!)</h1>
 
-        <div>
-            <h3 style="margin-bottom: 30px;">Get in touch!</h3>
+            <div id="cardContent">
 
+                <img src=" /img/avatar-icon.png" id="bussinessCardPicture" class="outline">
 
-            <button type="submit" id="footerEmail" class="outline"
-                onclick="window.open('mailto:dmarticasanova@gmail.com')">dmarticasanova@gmail.com</button>
+                <div id="bussinessInfo">
+                    <h3 style="margin: 0;">Daniel Martí Casanova</h3>
 
-            <!--<a href="mailto:dmarticasanova@gmail.com">dmarticasanova@gmail.com</a>-->
+                    <button type="submit" class="button"
+                        onclick="window.open('mailto:dmarticasanova@gmail.com')">dmarticasanova@gmail.com</button>
 
-            <div id="footerLinks">
-                <a id="footerItch" href="https://damaca.itch.io/"><img src="/img/icons/itch_icon.png"></a>
-                <a id="footerGit" href="https://github.com/damacaa"><img src="/img/icons/github_icon.png"></a>
-                <a id="footerLinkdn" href="https://www.linkedin.com/in/danielmarticasanova/"><img
-                        src="/img/icons/linkedin_icon.png"></a>
+                    <div id="footerLinks">
+                        <a class="button" id="footerItch" href="https://damaca.itch.io/"><img
+                                src="/img/icons/itch_icon.png"></a>
+                        <a class="button" id="footerGit" href="https://github.com/damacaa"><img
+                                src="/img/icons/github_icon.png"></a>
+                        <a class="button" id="footerLinkdn" href="https://www.linkedin.com/in/danielmarticasanova/"><img
+                                src="/img/icons/linkedin_icon.png"></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <p>This is my first </p>
     </div>
 </body>
 
