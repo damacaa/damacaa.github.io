@@ -17,6 +17,7 @@
     --border-radius-big: 15px;
     --main-font: 'Quicksand';
     --alternative-font: 'Nunito';
+    --shadowHeight: 0.375em;
 }
 
 
@@ -77,17 +78,17 @@ br {
 
     width: 60%;
     padding: 0.2em;
-    margin: 1.4em 0 0.4em 0;
+    margin: 1.4em 0 1.4em 0;
     background-color: var(--yellow);
 
     border-color: var(--grey);
     border-style: solid;
     border-width: var(--border-width);
     border-radius: var(--border-radius);
-
+    box-shadow: 0 calc(0.5 * var(--shadowHeight)) 0 currentColor;
 }
 
-button {
+.button {
 
     border-radius: var(--border-radius);
     border-width: var(--border-width);
@@ -104,14 +105,26 @@ button {
     transition-duration: 100ms;
 
     cursor: pointer;
+
+    border-color: var(--grey);
+    border-style: solid;
+    border-width: var(--border-width);
+    border-radius: var(--border-radius);
+    box-shadow: 0 var(--shadowHeight) 0 var(--grey);
+
+    position: relative;
 }
 
-button:hover {
+.button:hover {
 
     background-color: var(--red);
     color: var(--yellow);
 
-    transition-duration: 100ms;
+    transition-duration: 50ms;
+
+    box-shadow: 0 0 0 var(--grey);
+
+    transform: translateY(var(--shadowHeight));
 }
 
 .outline {
@@ -119,6 +132,7 @@ button:hover {
     border-style: solid;
     border-width: var(--border-width);
     border-radius: var(--border-radius);
+    box-shadow: 0 var(--shadowHeight) 0 currentColor;
 }
 
 ::selection {

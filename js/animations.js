@@ -41,4 +41,4 @@ AddAnimation('#projectPageBackground', 'fadeInAnimation', duration = '0.3s', del
 AddAnimation('#btClose', 'closeButtonAnimation', duration = '0.4s', delay = '0.5s');
 AddAnimation('#projectPageContent', 'projectPageContentAnimation', duration = '0.4s', delay = '0s');
 
-AddAnimation('.slider', 'fadeInAnimation', duration = '0.5s', delay = '0s');
+//AddAnimation('.slider', 'fadeInAnimation', duration = '0.5s', delay = '0s');
