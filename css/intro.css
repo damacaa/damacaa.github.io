@@ -6,6 +6,9 @@
 #introText {
     padding: 30% 0 0 0;
     font-size: auto;
+
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 #introText h1 {}
@@ -26,6 +29,15 @@
     gap: 2%;
     flex-direction: row-reverse;
     padding: 1em 0;
+
+
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#pixelArtPortrait {
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 #introLinks a {
