@@ -21,6 +21,7 @@
     margin-top: 50px;
 }
 
+
 #aboutMeText {
     margin: 5% 5%;
     width: auto;
@@ -38,6 +39,8 @@
 
     z-index: 3;
 }
+
+
 
 #aboutMeText ul {
     width: 60%;

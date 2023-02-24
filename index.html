@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/bubbles.css">
 
     <script src="js/floatingWindows.js"></script>
+    <script src="js/animations.js" defer></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
@@ -56,12 +57,13 @@
                     my CV!</button>
 
 
-                <img src=" /img/pixel_art.png"
-                    style="height: 20vh; position: fixed; bottom: 0; right: 100px; z-index: -1;" alt="">
 
             </div>
 
+            <img id="pixelArtPortrait" src=" /img/pixel_art.png"
+                style="height: 20vh; position: fixed; bottom: 0; right: 100px; z-index: -1;" alt="">
         </div>
+
 
         <div id="aboutMe" class="page">
 
@@ -91,15 +93,10 @@
                         and logic, including player
                         controllers, puzzle mechanics,
                         and combat systems.</li>
-                    <li><b>Miscellaneous:</b> Git, huge interest
-                        in design patterns, SOLID, SQL,
-                        very basic knowledge of GLSL,
-                        OpenGL, and CUDA.</li>
-                    <li><b>Other:</b> Agile methodologies,
-                        UML, Trello, great
-                        communication skills, proven
-                        artistic skills (proportion, color,
-                        composition…).
+                    <li><b>Miscellaneous:</b> Git, huge interest in design patterns, SOLID, OOP, DOP, SQL,
+                        multithreading, basic knowledge of GLSL, OpenGL, and CUDA. </li>
+                    <li><b>Other:</b> Agile methodologies, UML, Trello, great communication skills, proven artistic
+                        skills (proportion, color, composition…).
                     </li>
 
                 </ul>
@@ -287,15 +284,14 @@
                 <a href="https://damaca.itch.io/">Itch.io</a> and
                 <a href="https://github.com/damacaa">GitHub</a>.
             </p>
+        </div>
 
-            <!--Learn more windows-->
-            <div class="centerDIV" id="projectPageWindow">
-
-                <div class="divContent">
-                    <input type="button" id="btClose" onclick="CloseFloatingDiv()" value="X" />
-                    <iframe id="projectPageiFrame"></iframe>
-                </div>
-
+        <!--Learn more windows-->
+        <div id="projectPageWindow">
+            <div id="projectPageBackground"></div>
+            <div id="projectPageContent">
+                <input type="button" id="btClose" onclick="CloseFloatingDiv()" value="X" />
+                <iframe id="projectPageiFrame"></iframe>
             </div>
         </div>
 

@@ -2,18 +2,44 @@ input {
     cursor: pointer;
 }
 
-.centerDIV {
+#projectPageWindow {
     position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.75);
+
+
     width: 100%;
-    height: 100%;
-    padding: 5vh 0;
+    height: 101%;
+
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
     display: none;
     z-index: 10;
-    transition-duration: 100ms;
 
+    overflow: hidden;
+
+    transition-duration: 2000ms;
+
+    border-color: var(--grey);
+    border-style: solid;
+    border-width: var(--border-width);
+}
+
+/*#projectPageWindow:hover {
+    height: 0;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    transition-duration: 500ms;
+}*/
+
+#projectPageBackground {
+    background-color: var(--orange);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 101%;
 }
 
 #btClose {
@@ -35,11 +61,14 @@ input {
     border-radius: var(--border-radius);
 
     position: fixed;
-    z-index: 11;
-    right: 20%;
+    z-index: 15;
     scale: 1.5;
-
+    right: 0%;
+    top: 0%;
     transition-duration: 100ms;
+
+    scale: 0;
+    animation-fill-mode: forwards;
 }
 
 #btClose:hover {
@@ -47,20 +76,35 @@ input {
     scale: 1.7;
 }
 
+@keyframes closeButton {
+    from {
+        scale: 0;
+    }
 
-.divContent {
-    margin: 0 auto;
+    to {
+        scale: 1.5;
+    }
+}
+
+.closeButtonAnimation {
+    animation-name: closeButton;
+    animation-timing-function: cubic-bezier(0.0, 0.52, 0.165, 1)
+}
+
+
+#projectPageContent {
+
     background-color: var(--yellow);
 
 
-    width: 60%;
-    height: 85%;
+    width: 60vw;
+    height: 85vh;
 
     box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
     border-radius: var(--border-radius-big);
 
 
-    overflow: hidden;
+    overflow: visible;
     display: block;
 
     text-align: justify;
@@ -72,30 +116,96 @@ input {
     border-width: var(--border-width);
     border-radius: var(--border-radius);
 
+    position: fixed;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 10%);
+
+    z-index: 12;
+
+    top: 0;
+
 }
 
-.divContent img {
+@keyframes projectPageContentFrames {
+
+    from {
+        transform: translate(-50%, 100%);
+    }
+
+    to {
+        transform: translate(-50%, 10%);
+    }
+}
+
+.projectPageContentAnimation {
+    animation-name: projectPageContentFrames;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+#projectPageContent img {
     max-width: 100%;
     max-height: 500px;
     display: block;
     margin: 70px auto;
 }
 
-.divContent iframe {
+#projectPageContent iframe {
     border: none;
     width: 100%;
     height: 100%;
-
+    border-radius: var(--border-radius);
 }
 
 @media screen and (orientation:portrait) {
-    .divContent {
+
+    @keyframes projectPageContentFrames {
+
+        from {
+            transform: translate(-50%, 100%);
+        }
+
+        to {
+            transform: translate(-50%, 5%);
+        }
+    }
+
+    #projectPageContent {
         height: 90%;
-        width: auto;
-        margin: 5%;
+        width: 90%;
+        transform: translate(-50%, 5%);
     }
 
     #btClose {
         right: 5%;
     }
+}
+
+
+@keyframes closeWindowFrames {
+    0% {
+        height: 101%;
+        border-radius: 0;
+    }
+
+    30% {
+        height: 90vmin;
+        width: 90vmin;
+        border-radius: 80%;
+    }
+
+    100% {
+        width: 0;
+        height: 0;
+        border-radius: 100%;
+    }
+}
+
+.closeWindowAnimation {
+    animation-name: closeWindowFrames;
+    animation-duration: 750ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }

@@ -5,6 +5,8 @@
     margin: 0;
     text-align: left;
     width: auto;
+
+    position: relative;
 }
 
 #footerEmail {

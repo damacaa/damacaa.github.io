@@ -132,6 +132,8 @@ button:hover {
     border-width: 0px;
 
     border-bottom-width: var(--border-width);
+
+    position: relative;
 }
 
 .pageBackground {
@@ -161,8 +163,56 @@ button:hover {
     }
 }
 
+/* Animations */
+@keyframes floatFromLeft {
+    from {
+        transform: translate(-50vw, 0%);
+    }
 
+    to {
+        transform: translate(0%, 0%);
+    }
+}
 
+.floatFromLeftAnimation {
+    animation-name: floatFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.fadeInAnimation {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes grow {
+    from {
+        scale: 0;
+    }
+
+    to {
+        scale: 1;
+    }
+}
+
+.growAnimation {
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.0, 0.52, 0.165, 1)
+}
+
+/* Scrollbar */
 
 /* width */
 ::-webkit-scrollbar {
