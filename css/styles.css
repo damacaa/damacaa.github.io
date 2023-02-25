@@ -85,7 +85,7 @@ br {
     border-style: solid;
     border-width: var(--border-width);
     border-radius: var(--border-radius);
-    box-shadow: 0 calc(0.5 * var(--shadowHeight)) 0 currentColor;
+    box-shadow: 10px 10px 0 currentColor;
 }
 
 .button {

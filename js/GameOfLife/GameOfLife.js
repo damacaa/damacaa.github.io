@@ -22,7 +22,7 @@ resizeCanvas();
 //Crea el objeto de la clase mundo
 var world = new Mundo();
 world.RandomStart();
-world.StartTimer();
+
 
 /*canvas.addEventListener('mousedown', function (e) {
   //world.GetInput(canvas, e)
@@ -34,3 +34,21 @@ window.addEventListener('keydown', (e) => {
     world.RandomStart();
   }
 });
+
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const square = entry.target;
+
+    if (entry.isIntersecting) {
+      world.StartTimer();
+      return;
+    }
+
+    world.StopTimer();
+  });
+});
+
+observer.observe(canvas);
+
+

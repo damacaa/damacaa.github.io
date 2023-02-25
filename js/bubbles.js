@@ -1,19 +1,23 @@
-const wrapper = document.getElementById("bubble-wrapper");
+let isMobile = /Android|iPhone/i.test(navigator.userAgent);
 
-const animateBubble = x => {
-    const bubble = document.createElement("div");
-    bubble.className = "bubble";
+if (!isMobile) {
+    const wrapper = document.getElementById("bubble-wrapper");
 
-    bubble.style.left = `${x}px`;
+    const animateBubble = x => {
+        const bubble = document.createElement("div");
+        bubble.className = "bubble";
 
-    wrapper.appendChild(bubble);
+        bubble.style.left = `${x}px`;
 
-    setTimeout(() => wrapper.removeChild(bubble), 2000);
+        wrapper.appendChild(bubble);
+
+        setTimeout(() => wrapper.removeChild(bubble), 2000);
+    }
+
+    window.onmousemove = e => animateBubble(e.clientX);
+
+    let mouseX = 0;
 }
-
-window.onmousemove = e => animateBubble(e.clientX);
-
-let mouseX = 0;
 
 /*window.onmousemove = e => mouseX = e.clientX;
 
