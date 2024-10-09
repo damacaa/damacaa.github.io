@@ -31,6 +31,10 @@ body {
     margin: 0;
     padding: 0;
 
+    overflow: hidden;
+    /* Prevent the default scrolling */
+
+    height: 100%;
 }
 
 h1 {
@@ -139,6 +143,15 @@ br {
     background: var(--orange);
 }
 
+.pageContainer {
+    height: 100vh;
+    /* Set container height to the viewport height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory;
+    /* Enable scroll snapping */
+}
+
 
 .page {
     border-color: var(--grey);
@@ -147,7 +160,10 @@ br {
 
     border-bottom-width: var(--border-width);
 
-    position: relative;
+    min-height: 100vh;
+    /* Each page takes full viewport height */
+    scroll-snap-align: start;
+    /* Align to the start of the div */
 }
 
 .pageBackground {

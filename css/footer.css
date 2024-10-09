@@ -7,6 +7,12 @@
     width: auto;
 
     position: relative;
+
+    display: flex;
+    /* Center content if needed */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
 }
 
 #footerEmail {
