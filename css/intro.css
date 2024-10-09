@@ -1,15 +1,28 @@
 #intro {
     text-align: left;
     min-height: 100%;
+    margin: 0;
+    background-color: transparent;
+
+    display: block;
 }
 
 #introText {
-    padding: 30% 0 0 0;
     font-size: auto;
 
     opacity: 0;
     animation-fill-mode: forwards;
+    margin-top: 40vh;
+    margin-bottom: 50px;
 }
+
+@media screen and (orientation:portrait) {
+    #introText {
+        margin-top: 20vh;
+    }
+}
+
+
 
 #introText h1 {}
 
@@ -18,7 +31,7 @@
 }
 
 #introLinks {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 15%;
     z-index: 100;
@@ -38,6 +51,10 @@
 #pixelArtPortrait {
     opacity: 0;
     animation-fill-mode: forwards;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    z-index: -1;
 }
 
 #introLinks a {

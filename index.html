@@ -22,13 +22,13 @@
 </head>
 
 <body>
-    <div id="content">
+    <div id="content" class="pageContainer">
         <div id="bubble-wrapper"> </div>
         <script src="js/bubbles.js"></script>
 
-        <div id="intro" class="page" style="margin: 0;">
+        <div id="intro" class="page">
 
-            <div class="pageBackground" style="z-index: -2; background-color: var(--green); margin: 0;">
+            <div class="pageBackground" style="z-index: -3; background-color: var(--green); margin: 0;">
             </div>
 
             <div id="introLinks">
@@ -46,7 +46,7 @@
             <div id="introText">
 
                 <h1>Hello :)</h1>
-                <h1>My name is <b>Daniel Martí</b> and I'm a game programmer
+                <h1>My name is <b>Daniel Martí</b> and I make cool games and stuff
                 </h1>
                 <p>Want to contact? Send me an email at <a href="mailto: dmarticasanova@gmail.com"
                         style="font-weight: 900;">dmarticasanova@gmail.com</a></p>
@@ -60,8 +60,7 @@
 
             </div>
 
-            <img id="pixelArtPortrait" src=" /img/pixel_art.png"
-                style="height: 20vh; position: fixed; bottom: 0; right: 100px; z-index: -1;" alt="">
+            <img id="pixelArtPortrait" src=" /img/pixel_art.png" alt="">
         </div>
 
 
@@ -72,33 +71,27 @@
             <div id="aboutMeText" class="outline">
                 <h1 class="sectionHeader" style="background-color: var(--green);">About me</h1>
 
-                I have been fascinated by the process of creating video games since I was a kid, playing Pokemon
-                Fire Red and wondering how they fit all those creatures inside of a GameBoy.
-                <br><br>
-                Now, I'm a recent graduate in video game development. Making games has become my passion. I love
-                solving hard problems and building clean and maintainable code. I continuously spend my time
-                learning about new design patterns, algorithms, or new technologies that help me build better games.
-                <br><br>
-                <ul style="margin-bottom: 100px; text-align: left;">
-                    <li><b>Programming languages:</b>
-                        C++, C#, Python, JavaScript.</li>
-                    <li><b>Software:</b> Unity, Unreal Engine
-                        (Blueprints), Visual Studio,
-                        Blender, 3ds Max, Photoshop.</li>
-                    <li><b>Physics programming:</b> collisions,
-                        rigid body and soft body
-                        dynamics, spatial partition.</li>
-                    <li><b>Gameplay programming:</b>
-                        implementing gameplay systems
-                        and logic, including player
-                        controllers, puzzle mechanics,
-                        and combat systems.</li>
-                    <li><b>Miscellaneous:</b> Git, huge interest in design patterns, SOLID, OOP, DOP, SQL,
-                        multithreading, basic knowledge of GLSL, OpenGL, and CUDA. </li>
-                    <li><b>Other:</b> Agile methodologies, UML, Trello, great communication skills, proven artistic
-                        skills (proportion, color, composition…).
-                    </li>
+                <p>
+                    I'm a junior software developer specialized in game deveolpemnt, graphics and simulations. I'm
+                    always learnign about new stuff and love writing code that pushes the possibilities of modern
+                    hardware.
+                </p>
 
+                <ul style="margin-bottom: 100px; text-align: left;">
+                    <li><b>Programming Languages:</b> C++, C#, Python, JavaScript.</li>
+                    <li><b>Frameworks/Engines:</b> Unity, Unreal Engine (Blueprints and C++), Godot, WPF.</li>
+                    <li><b>Development Tools:</b> Git, PlasticSCM, Visual Studio, VS Code.</li>
+                    <li><b>Software Architecture & Design:</b> Entity-Component System (ECS), Design Patterns, SOLID,
+                        OOP (Object-Oriented Programming), DOP (Data-Oriented Programming).</li>
+                    <li><b>Performance Optimization:</b> Multi-threading, Real-Time Systems, Low-Level Memory
+                        Management.</li>
+                    <li><b>Graphics & Rendering:</b> Graphics APIs (OpenGL), Real-Time Rendering, Shaders (GLSL),
+                        Optimization.</li>
+                    <li><b>Simulation & Algorithm Development:</b> Physics Simulation & Modeling, Mathematical
+                        Algorithms for Real-Time Interactions.</li>
+                    <li><b>Project Management & Collaboration:</b> Agile Methodologies, Jira, SCRUM, UML, Trello.</li>
+                    <li><b>Graphics & Content Creation Tools:</b> Blender, 3ds Max, Photoshop, Figma.</li>
+                    <li><b>Languages:</b> Proficient in English (C1 Advanced), Native Spanish and Catalan.</li>
                 </ul>
             </div>
 
@@ -322,74 +315,35 @@
             </div>
         </div>
 
-        <!--<div id="codeSamples" class="page">
-            <h1 class="sectionHeader" style="background-color: var(--orange);">Code samples</h1>
-            <div class="slider">
-                <div class="slides">
 
-                    <div id="slide-1">
-                        <div class="pieceOfCode">
-                            <h3>River crossing puzzle solver using A* algorithm in C#</h3>
-                            <iframe src="/codeSamples/same_boat_code_sample.html"> </iframe>
+
+
+
+
+        <div id="footer" style=" padding: 2% 0 3% 0" class="page">
+
+            <div id="bussinessCard" class="outline">
+
+                <h1 class="sectionHeader" id="cardHeader">Bussiness card (Get in touch!)</h1>
+
+                <div id="cardContent">
+
+                    <img src=" /img/avatar-icon.png" id="bussinessCardPicture" class="outline">
+
+                    <div id="bussinessInfo">
+                        <h3 style="margin: 0; font-size: 2em;">Daniel Martí Casanova</h3>
+                        <button type="submit" class="button" id="bussinessCardEmail"
+                            onclick="window.open('mailto:dmarticasanova@gmail.com')">dmarticasanova@gmail.com</button>
+
+                        <div id="footerLinks">
+                            <a class="button" id="footerItch" href="https://damaca.itch.io/"><img
+                                    src="/img/icons/itch_icon.png"></a>
+                            <a class="button" id="footerGit" href="https://github.com/damacaa"><img
+                                    src="/img/icons/github_icon.png"></a>
+                            <a class="button" id="footerLinkdn"
+                                href="https://www.linkedin.com/in/danielmarticasanova/"><img
+                                    src="/img/icons/linkedin_icon.png"></a>
                         </div>
-                    </div>
-
-                    <div id="slide-2">
-                        <div class="pieceOfCode">
-                            <h3>Backward Euler cloth simulation in C++</h3>
-                            <iframe src="/codeSamples/physics_engine_code_sample.html"> </iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="slideButtons">
-                    <a class="button" href="#slide-1">1</a>
-                    <a class="button" href="#slide-2">2</a>
-                </div>
-
-
-                <script>
-                    /*window.addEventListener("hashchange", function () {
-                        window.scrollTo(window.scrollX, window.scrollY - window.innerHeight * 0.1);
-                        //window.scrollTo({ top: window.scrollY - window.innerHeight * 0.15, behavior: 'smooth' });
-                    });*/
-
-                    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                        anchor.addEventListener('click', function (e) {
-                            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                                behavior: "smooth", block: "center"
-                            });
-                        });
-                    });
-                </script>
-            </div>
-        </div>-->
-
-
-    </div>
-
-    <div id="footer" style=" padding: 2% 0 3% 0">
-
-        <div id="bussinessCard" class="outline">
-
-            <h1 class="sectionHeader" id="cardHeader">Bussiness card (Get in touch!)</h1>
-
-            <div id="cardContent">
-
-                <img src=" /img/avatar-icon.png" id="bussinessCardPicture" class="outline">
-
-                <div id="bussinessInfo">
-                    <h3 style="margin: 0; font-size: 2em;">Daniel Martí Casanova</h3>
-                    <button type="submit" class="button" id="bussinessCardEmail"
-                        onclick="window.open('mailto:dmarticasanova@gmail.com')">dmarticasanova@gmail.com</button>
-
-                    <div id="footerLinks">
-                        <a class="button" id="footerItch" href="https://damaca.itch.io/"><img
-                                src="/img/icons/itch_icon.png"></a>
-                        <a class="button" id="footerGit" href="https://github.com/damacaa"><img
-                                src="/img/icons/github_icon.png"></a>
-                        <a class="button" id="footerLinkdn" href="https://www.linkedin.com/in/danielmarticasanova/"><img
-                                src="/img/icons/linkedin_icon.png"></a>
                     </div>
                 </div>
             </div>

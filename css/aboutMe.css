@@ -23,13 +23,12 @@
 
 
 #aboutMeText {
-    margin: 5% 5%;
-    width: auto;
+
+    width: 50%;
 
     background-color: var(--yellow);
-    padding: 0em 2em;
+    padding: 1em 5em 1em 5em;
     border-radius: var(--border-radius-big);
-
 
     color: var(--grey);
 
@@ -38,6 +37,13 @@
     font-size: 0.8em;
 
     z-index: 3;
+}
+
+@media screen and (orientation:portrait) {
+    #aboutMeText {
+        width: 90%;
+        padding: 0em 2em;
+    }
 }
 
 
