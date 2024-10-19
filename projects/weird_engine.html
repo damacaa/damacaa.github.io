@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Daniel Martí</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/projectPage.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+    <div class="content">
+        <div class="cover">
+            <img src="../img/pixel_art.png" style="width: 100px;" />
+        </div>
+
+        <h1 style="text-align: center;">Weird Engine</h1>
+        <div class="projectInfo">
+            <p>
+                <b>Engine:</b><br>
+                Unity<br><br>
+                <b>Size of the team:</b><br>
+                6<br><br>
+                <b>Time:</b><br>
+                4 months<br><br>
+                <b>My role:</b><br>
+                Programmer<br><br>
+            </p>
+        </div>
+
+        <div class="projectContent" style="min-height: 100%;">
+            <p>As we all know, it's hard to find time to work on personal projects after work. That's probably why this
+                project is still so poorly documented.<br></p>
+
+            <p>This project started as a 3D game engine that seamlessly combined traditional triangle rasterization with
+                a more unique approach SDF Ray Marching. This was quite a challenge, but eventually I got it working as
+                intended.</p>
+
+            <img src="../img/projects/weird-engine/3d.png">
+
+            <p>I quickly realized the scale of what I was trying to do, and the implications of trying to get an
+                acceptable performance using such an expensive rendering technique. The retro aesthetics were not a
+                design choice, but rather a technical limitation. The rendering algorithm's complexity grew exponentialy
+                with the amout of objects, so it required implemented complex acceleration structures, similar to the
+                ones used for ray tracing. Baking static SDFs to meshes was also an option, but it would loose most of
+                its charm.
+                <br>
+            </p>
+
+            <p>Then came the idea of moving to 2D. Scaling down meant the project would be in a more realistic scope. In
+                2D, I could easily adapt the rendering method to grow linearly.
+                <br>
+            </p>
+
+            <p>As a side bonus, 2D physics are way less complex, and this allowed my little physics engine to run
+                thousands of objects easily.
+                <br>
+            </p>
+            <img src="../img/projects/weird-engine/bigSimulation.png">
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
