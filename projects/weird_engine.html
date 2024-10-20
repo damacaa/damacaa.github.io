@@ -13,7 +13,10 @@
 <body>
     <div class="content">
         <div class="cover">
-            <img src="../img/pixel_art.png" style="width: 100px;" />
+            <video style="width: 100%; object-fit: cover;" autoplay loop>
+                <source src="../img/projects/weird-engine/weird-engine.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
         <h1 style="text-align: center;">Weird Engine</h1>
@@ -31,34 +34,52 @@
         </div>
 
         <div class="projectContent" style="min-height: 100%;">
-            <p>As we all know, it's hard to find time to work on personal projects after work. That's probably why this
-                project is still so poorly documented.<br></p>
 
-            <p>This project started as a 3D game engine that seamlessly combined traditional triangle rasterization with
-                a more unique approach SDF Ray Marching. This was quite a challenge, but eventually I got it working as
-                intended.</p>
+            <h2>Summary</h2>
+            <p>A 2D game engine in C++ with OpenGL, using signed distance functions (SDFs) for rendering and physics.
+                Key features:</p>
+            <ul>
+                <li>ECS architecture to structure and connect components.</li>
+                <li>Custom physics engine optimized for SDFs.</li>
+                <li>Fast SDF renderer.</li>
+            </ul>
+
+            <h2>The story</h2>
+
+            <p>
+                This project started as a 3D renderer engine that seamlessly combined traditional triangle rasterization
+                with SDF Ray Marching. This was quite a challenge, but eventually I got it working as intended.<br>
+            </p>
 
             <img src="../img/projects/weird-engine/3d.png">
 
-            <p>I quickly realized the scale of what I was trying to do, and the implications of trying to get an
-                acceptable performance using such an expensive rendering technique. The retro aesthetics were not a
-                design choice, but rather a technical limitation. The rendering algorithm's complexity grew exponentialy
-                with the amout of objects, so it required implemented complex acceleration structures, similar to the
-                ones used for ray tracing. Baking static SDFs to meshes was also an option, but it would loose most of
-                its charm.
-                <br>
+            <p>
+                Then I decided I wanted to turn it into a usable engine, but I quickly realized the scale of what I was
+                trying to do and the implications of trying to get an acceptable performance using such an expensive
+                rendering technique.<br>
             </p>
 
-            <p>Then came the idea of moving to 2D. Scaling down meant the project would be in a more realistic scope. In
-                2D, I could easily adapt the rendering method to grow linearly.
-                <br>
+            <p>
+                The retro aesthetics were not a design choice, but rather a technical limitation. The rendering
+                algorithm's complexity grew exponentially with the amount of objects, so it required implementing
+                complex acceleration structures, similar to the ones used for ray tracing. Baking static SDFs to meshes
+                was also an option, but it would lose most of its charm.<br>
             </p>
 
-            <p>As a side bonus, 2D physics are way less complex, and this allowed my little physics engine to run
-                thousands of objects easily.
-                <br>
+            <p>
+                Then came the idea of moving to 2D. Scaling down meant the project would be in a more realistic scope.
+                In 2D, I could easily adapt the rendering method to grow linearly.<br>
             </p>
+
+            <p>
+                As a side bonus, 2D physics are way less complex, and this allowed my little physics engine to run
+                thousands of objects easily.<br>
+            </p>
+
             <img src="../img/projects/weird-engine/bigSimulation.png">
+
+            <h2>How does it work?</h2>
+            <p>WIP...</p>
 
         </div>
 
