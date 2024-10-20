@@ -107,147 +107,204 @@
 
         <div id="projects" class="page">
             <h1 class="sectionHeader" style="background-color: var(--yellow);">Recent projects</h1>
-            <div id="gameList">
+            <div id="gameListContainer">
+                <div id="gameList">
 
-                <!--SAME BOAT-->
-                <div>
-                    <div class="game">
-                        <a title="itch.io" href="https://damaca.itch.io/same-boat" target="_blank">
-                            <img src="/img/projects/same_boat.gif" alt="We're in the Same Boat">
-                            <h3>We're in the Same Boat</h3>
-                        </a>
 
-                        <div class="gameDescription">
-                            <p>Puzzle game based on a classic riddle. Planning to release it for
-                                mobile platforms soon.
-                            </p>
+                    <!--WEIRD-ENGINE-->
+                    <div>
+                        <div class="game">
+                            <a title="GitHub" href="https://github.com/damacaa/weird-engine" target="_blank">
+                                <img src="/img/projects/weird-engine/weird-engine.gif" alt="Weird Engine">
+                                <h3>Weird Engine</h3>
+                            </a>
+                            <div class="gameDescription">
+                                <p>Building my own 2D engine in C++ with OpenGL and custom physics.</p>
 
-                            <div>
-                                <input type="button" class="button learnMoreButton"
-                                    onclick="ShowFloatingDiv('same_boat')" value="Learn more..." />
-                            </div>
-                        </div>
+                                <div>
+                                    <input type="button" class="button learnMoreButton"
+                                        onclick="ShowFloatingDiv('weird_engine')" value="Learn more..." />
+                                </div>
 
-                        <div class="projectTags">
-                            <p>GameJam</p>
-                            <p>C#</p>
-                            <p>Unity</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--INVERSE ANIMATION-->
-                <div>
-                    <div class="game">
-                        <a title="GitHub" href="https://github.com/damacaa/inverse-animation-editing" target="_blank">
-                            <img src="/img/projects/inverse-animation.gif" alt="Inverse animation framework">
-                            <h3>My bachelor's Thesis</h3>
-                        </a>
-                        <div class="gameDescription">
-                            <p>A framework for inverse animation editing based on differentiable simulation.<br><br>
-                                Includes a C++ differentiable physics engine, some machine learning in Python and
-                                also
-                                required connecting this tools to Unity via a native plugin.</p>
-                            <div>
-                                <input type="button" class="button learnMoreButton"
-                                    onclick="ShowFloatingDiv('TFG_Memoria_Daniel_Marti_Casanova.pdf')"
-                                    value="Learn more..." />
-                            </div>
-                        </div>
-                        <div class="projectTags">
-                            <p>Machine learning</p>
-                            <p>Physics</p>
-                            <p>C++</p>
-                            <p>University</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--POND PLATOON-->
-                <div>
-                    <div class="game">
-                        <a title="itch.io" href="https://bubblygames.itch.io/pond-platoon" target="_blank">
-                            <img src="/img/projects/pond_platoon.gif" alt="Pond Platoon">
-                            <h3>Pond Platoon</h3>
-                        </a>
-                        <div class="gameDescription">
-                            <p>A 3D tower defense game about frogs.</p>
-
-                            <div>
-                                <input type="button" class="button learnMoreButton"
-                                    onclick="ShowFloatingDiv('pond_platoon')" value="Learn more..." />
                             </div>
 
-                        </div>
-
-                        <div class="projectTags">
-                            <p>Procedural generation</p>
-                            <p>C#</p>
-                            <p>Unity</p>
-                            <p>University</p>
+                            <div class="projectTags">
+                                <p>C++</p>
+                                <p>OpenGL</p>
+                                <p>Physics</p>
+                                <p>Ray marching</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!--SOFT BODY SIMULATION-->
-                <div>
-                    <div class=" game">
-                        <a title="itch.io" href="https://damaca.itch.io/soft-body-simulation-in-unity" target="_blank">
-                            <img src="/img/projects/tale_of_the_sea.gif" alt="Cloth simulation">
-                            <h3>Intro to 3D animation</h3>
-                        </a>
-                        <div class="gameDescription">
-                            <p>I designed a character, modelled and animated it and imported it to Unity. Then I
-                                built my own soft-body simulation animations and added them to the character and the
-                                enviroment.</p>
-                            <div>
-                                <input type="button" class="button learnMoreButton"
-                                    onclick="ShowFloatingDiv('soft_body')" value="Learn more..." />
+                    <!--SNGULAR-->
+                    <div>
+                        <div class="game">
+                            <a title="website" href="https://www.sngular.com/" target="_blank">
+                                <img src="/img/projects/sngular/primer-equipo.gif" alt="SNGULAR">
+                                <h3>SNGULAR Studios</h3>
+                            </a>
+                            <div class="gameDescription">
+                                <p>Working in a team specialized in building interactive experiences for museums using
+                                    game
+                                    development tech.</p>
+
+                                <div>
+                                    <input type="button" class="button learnMoreButton"
+                                        onclick="ShowFloatingDiv('sngular')" value="Learn more..." />
+                                </div>
+
+                            </div>
+
+                            <div class="projectTags">
+                                <p>Internal tools</p>
+                                <p>Unity</p>
+                                <p>C#</p>
+                                <p>C++</p>
+                                <p>Unreal Engine</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--SAME BOAT-->
+                    <div>
+                        <div class="game">
+                            <a title="itch.io" href="https://damaca.itch.io/same-boat" target="_blank">
+                                <img src="/img/projects/same_boat.gif" alt="We're in the Same Boat">
+                                <h3>We're in the Same Boat</h3>
+                            </a>
+
+                            <div class="gameDescription">
+                                <p>Puzzle game based on a classic riddle. Now available in the Play Store! </p>
+                                <div>
+                                    <input type="button" class="button learnMoreButton"
+                                        onclick="ShowFloatingDiv('same_boat')" value="Learn more..." />
+                                </div>
+                            </div>
+
+                            <div class="projectTags">
+                                <p>GameJam</p>
+                                <p>C#</p>
+                                <p>Unity</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--INVERSE ANIMATION-->
+                    <div>
+                        <div class="game">
+                            <a title="GitHub" href="https://github.com/damacaa/inverse-animation-editing"
+                                target="_blank">
+                                <img src="/img/projects/inverse-animation.gif" alt="Inverse animation framework">
+                                <h3>My bachelor's Thesis</h3>
+                            </a>
+                            <div class="gameDescription">
+                                <p>A framework for inverse animation editing based on differentiable simulation.<br><br>
+                                    Includes a C++ differentiable physics engine, some machine learning in Python and
+                                    also
+                                    required connecting this tools to Unity via a native plugin.</p>
+                                <div>
+                                    <input type="button" class="button learnMoreButton"
+                                        onclick="ShowFloatingDiv('TFG_Memoria_Daniel_Marti_Casanova.pdf')"
+                                        value="Learn more..." />
+                                </div>
+                            </div>
+                            <div class="projectTags">
+                                <p>Machine learning</p>
+                                <p>Physics</p>
+                                <p>C++</p>
+                                <p>University</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--POND PLATOON-->
+                    <div>
+                        <div class="game">
+                            <a title="itch.io" href="https://bubblygames.itch.io/pond-platoon" target="_blank">
+                                <img src="/img/projects/pond_platoon.gif" alt="Pond Platoon">
+                                <h3>Pond Platoon</h3>
+                            </a>
+                            <div class="gameDescription">
+                                <p>A 3D tower defense game about frogs.</p>
+
+                                <div>
+                                    <input type="button" class="button learnMoreButton"
+                                        onclick="ShowFloatingDiv('pond_platoon')" value="Learn more..." />
+                                </div>
+
+                            </div>
+
+                            <div class="projectTags">
+                                <p>Procedural generation</p>
+                                <p>C#</p>
+                                <p>Unity</p>
+                                <p>University</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--SOFT BODY SIMULATION-->
+                    <div>
+                        <div class=" game">
+                            <a title="itch.io" href="https://damaca.itch.io/soft-body-simulation-in-unity"
+                                target="_blank">
+                                <img src="/img/projects/tale_of_the_sea.gif" alt="Cloth simulation">
+                                <h3>Intro to 3D animation</h3>
+                            </a>
+                            <div class="gameDescription">
+                                <p>I designed a character, modelled and animated it and imported it to Unity. Then I
+                                    built my own soft-body simulation animations and added them to the character and the
+                                    enviroment.</p>
+                                <div>
+                                    <input type="button" class="button learnMoreButton"
+                                        onclick="ShowFloatingDiv('soft_body')" value="Learn more..." />
+                                </div>
+
+                            </div>
+
+                            <div class="projectTags">
+                                <p>Art</p>
+                                <p>Physics simulation</p>
+                                <p>3D Animation</p>
+                                <p>C#</p>
+                                <p>Unity</p>
+                                <p>University</p>
+                                <p>Blender</p>
                             </div>
 
                         </div>
-
-                        <div class="projectTags">
-                            <p>Art</p>
-                            <p>Physics simulation</p>
-                            <p>3D Animation</p>
-                            <p>C#</p>
-                            <p>Unity</p>
-                            <p>University</p>
-                        </div>
-
                     </div>
-                </div>
 
 
 
-                <!--RUINS OF LIGHT-->
-                <div>
-                    <div class="game">
-                        <a title="itch.io" href="https://damaca.itch.io/ruins-of-light" target="_blank">
-                            <img src="/img/projects/ruins_of_light.gif" alt="Ruins of Light">
-                            <h3>Ruins of Light</h3>
-                        </a>
-                        <div class="gameDescription">
+                    <!--RUINS OF LIGHT-->
+                    <div>
+                        <div class="game">
+                            <a title="itch.io" href="https://damaca.itch.io/ruins-of-light" target="_blank">
+                                <img src="/img/projects/ruins_of_light.gif" alt="Ruins of Light">
+                                <h3>Ruins of Light</h3>
+                            </a>
+                            <div class="gameDescription">
 
-                            <p>A multiplayer web game I made a few years ago with Phaser3.<br>
-                                It was my first game as a game programmer, and it's a mess. But I learnt a lot
-                                from
-                                it.</p>
+                                <p>A multiplayer web game I made a few years ago with Phaser3.<br>
+                                    It was my first game as a game programmer, and it's a mess. But I learnt a lot
+                                    from
+                                    it.</p>
 
-                        </div>
+                            </div>
 
-                        <div class="projectTags">
-                            <p>Online multiplayer</p>
-                            <p>Java</p>
-                            <p>JavaScript</p>
-                            <p>University</p>
+                            <div class="projectTags">
+                                <p>Online multiplayer</p>
+                                <p>Java</p>
+                                <p>JavaScript</p>
+                                <p>University</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!--TUERCAS-->
-                <!--<div>
+                    <!--TUERCAS-->
+                    <!--<div>
                         <div class="game">
                             <img src="/img/projects/tuercas.gif" alt="Tuercas">
                             <h3>My first game ever</h3>
@@ -269,7 +326,20 @@
                             </div>
                         </div>
                     </div>-->
+                </div>
             </div>
+
+            <script>
+                const scrollableDiv = document.querySelector('#gameList');
+
+                // Add event listener to the div
+                scrollableDiv.addEventListener('wheel', function (event) {
+                    if (event.deltaY !== 0) { // Only respond to vertical scrolling
+                        event.preventDefault(); // Prevent default vertical scroll
+                        scrollableDiv.scrollLeft += 5.0 * event.deltaY; // Scroll horizontally
+                    }
+                });
+            </script>
 
             <p style="padding-bottom: 50px; text-align: center;">These are just some of my favourite projects, but you
                 can check the rest in my
