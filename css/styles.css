@@ -256,8 +256,8 @@ br {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--red);
-    border-radius: 0px;
+    background: var(--green);
+    border-radius: 5px;
 
     border-color: var(--grey);
     border-style: solid;
