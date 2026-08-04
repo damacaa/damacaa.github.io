@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daniel Martí - University Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        html, body {
+            background-color: var(--yellow);
+            color: var(--grey);
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none;  /* Chrome, Safari and Opera */
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        h1.main-title {
+            font-size: 3.5rem;
+            margin: 0 0 1rem 0;
+            color: var(--grey);
+            font-family: var(--main-font);
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--grey);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .project-section {
+            margin-bottom: 6rem;
+            background: transparent;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            background: var(--grey);
+            margin-bottom: 2rem;
+            /* No borders */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .project-content {
+            padding: 0;
+        }
+
+        .project-title {
+            font-size: 2.5rem;
+            color: var(--grey);
+            margin: 0 0 1.5rem 0;
+            font-family: var(--main-font);
+            padding-left: 1rem;
+            border-left: 6px solid var(--grey);
+        }
+
+        .project-title.green-accent {
+            border-left-color: var(--green);
+        }
+
+        .project-title.orange-accent {
+            border-left-color: var(--orange);
+        }
+
+        .project-title.red-accent {
+            border-left-color: var(--red);
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background-color: var(--white);
+            border-left: 4px solid var(--grey);
+        }
+
+        .meta-grid.green-border { border-left-color: var(--green); }
+        .meta-grid.orange-border { border-left-color: var(--orange); }
+        .meta-grid.red-border { border-left-color: var(--red); }
+
+        .meta-item span {
+            display: block;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+            color: var(--grey);
+            opacity: 0.8;
+        }
+
+        .meta-item strong {
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            text-align: justify;
+        }
+
+        .description p {
+            margin: 0 0 1.5rem 0;
+        }
+        
+        .description ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .description li {
+            margin-bottom: 0.75rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            align-items: start;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: none;
+            box-shadow: none;
+        }
+
+        a.button {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1 class="main-title">University Projects</h1>
+            <p class="subtitle">A collection of foundational games, simulations, and technical projects developed during my computer science degree.</p>
+        </header>
+
+        <!-- POND PLATOON -->
+        <article class="project-section">
+            <h2 class="project-title green-accent">Pond Platoon</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/GKhpRWcBeyY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div class="project-content">
+                <div class="meta-grid green-border">
+                    <div class="meta-item"><span>Engine</span><strong>Unity (C#)</strong></div>
+                    <div class="meta-item"><span>Role</span><strong>Programmer</strong></div>
+                    <div class="meta-item"><span>Team Size</span><strong>6</strong></div>
+                    <div class="meta-item"><span>Timeline</span><strong>4 Months</strong></div>
+                </div>
+
+                <div class="description">
+                    <p>Pond Platoon is a casual, 3D tower defense game with a unique twist: players dynamically rotate a procedurally generated voxel world to track enemy movements and defend their base.</p>
+                    <ul>
+                        <li>Developed a system to procedurally generate infinite 3D voxel worlds.</li>
+                        <li>Engineered a custom A* path-finding system tailored for navigating complex 3D terrain.</li>
+                        <li>Collaborated closely with designers and artists to integrate gameplay mechanics and visual effects.</li>
+                    </ul>
+                </div>
+
+                <div class="gallery">
+                    <img src="../img/projects/PondPlatoon/gameplay_2.gif" alt="Pond Platoon Gameplay 1">
+                    <img src="../img/projects/PondPlatoon/gameplay_3.gif" alt="Pond Platoon Gameplay 3">
+                    <img src="../img/projects/PondPlatoon/procedural_1.gif" alt="Procedural Generation 1">
+                    <img src="../img/projects/PondPlatoon/procedural_2.gif" alt="Procedural Generation 2">
+                    <img src="../img/projects/PondPlatoon/procedural_3.gif" alt="Procedural Generation 3">
+                    <img src="../img/projects/PondPlatoon/procedural_4.gif" alt="Procedural Generation 4">
+                </div>
+            </div>
+        </article>
+
+        <!-- INTRO TO 3D ANIMATION -->
+        <article class="project-section">
+            <h2 class="project-title orange-accent">Intro to 3D Animation</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/IolONsiah0U" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div class="project-content">
+                <div class="meta-grid orange-border">
+                    <div class="meta-item"><span>Tools</span><strong>Unity & Blender</strong></div>
+                    <div class="meta-item"><span>Focus</span><strong>Tech Art & Physics</strong></div>
+                    <div class="meta-item"><span>Team Size</span><strong>1</strong></div>
+                    <div class="meta-item"><span>Timeline</span><strong>2 Months</strong></div>
+                </div>
+
+                <div class="description">
+                    <p>This solo project bridged the gap between technical programming and 3D art. The goal was to design, model, and animate an original character from scratch, and bring it to life inside Unity.</p>
+                    <p>The core technical achievement was developing a custom, highly-optimized cloth physics simulation for the character's cape. This required deep knowledge of physical integration methods and constraints to balance believable realism with real-time performance rendering.</p>
+                </div>
+
+                <div class="gallery">
+                    <img src="../img/projects/kid/turnaround.png" alt="Character turnaround">
+                    <img src="../img/projects/kid/faces.png" alt="Facial expressions">
+                    <img src="../img/projects/kid/poses.png" alt="Character poses">
+                    <img src="../img/projects/kid/value.png" alt="Value study">
+                    <img src="../img/projects/kid/colors.png" alt="Color explorations">
+                    <img src="../img/projects/kid/beauty.png" alt="Beauty render">
+                    <img src="../img/projects/kid/thumbnails.png" alt="Concept thumbnails">
+                    <img src="../img/projects/kid/escenario.png" alt="Environment design 1">
+                    <img src="../img/projects/kid/escenario2.png" alt="Environment design 2">
+                </div>
+            </div>
+        </article>
+
+        <!-- RUINS OF LIGHT -->
+        <article class="project-section">
+            <h2 class="project-title red-accent">Ruins of Light</h2>
+            
+            <div class="project-content">
+                <div class="meta-grid red-border">
+                    <div class="meta-item"><span>Engine</span><strong>Phaser3</strong></div>
+                    <div class="meta-item"><span>Language</span><strong>JavaScript & Java</strong></div>
+                    <div class="meta-item"><span>Focus</span><strong>Online Multiplayer</strong></div>
+                </div>
+
+                <div class="description">
+                    <p>Ruins of Light was my very first undertaking as a game programmer—a 2D multiplayer web game built with Phaser3 on the frontend and a custom Java backend.</p>
+                    <p>While the codebase reflects early learning stages, this project was a massive stepping stone. It taught me the absolute fundamentals of the game loop, client-server architecture, state synchronization, and handling network latency in a real-time multiplayer environment.</p>
+                </div>
+                
+                <div class="gallery">
+                    <img src="../img/projects/ruins_of_light.gif" alt="Ruins of Light Gameplay">
+                </div>
+            </div>
+        </article>
+
+    </div>
+</body>
+</html>

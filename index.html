@@ -1,19 +1,11 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>Daniel Martí - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/intro.css">
-    <link rel="stylesheet" href="css/games.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/codeSamples.css">
-    <link rel="stylesheet" href="css/aboutMe.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/floatingWindow.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/bubbles.css">
 
     <script src="js/floatingWindows.js"></script>
     <script src="js/animations.js" defer></script>
@@ -23,8 +15,6 @@
 
 <body>
     <div id="content" class="pageContainer">
-        <!-- <div id="bubble-wrapper"> </div>
-        <script src="js/bubbles.js"></script> -->
 
         <div id="intro" class="page">
 
@@ -35,14 +25,9 @@
                 <a class="button" href="https://www.linkedin.com/in/danielmarticasanova/">LinkedIn</a>
                 <a class="button" href="https://github.com/damacaa">GitHub</a>
                 <a class="button" href="https://damaca.itch.io/">Itch.io</a>
-                <!--<a href="https://damaca.itch.io/"><img src="/img/icons/itch_icon.png"></a>
-                    <a href="https://github.com/damacaa"><img src="/img/icons/github_icon.png"></a>
-                    <a href="https://www.linkedin.com/in/danielmarticasanova/"><img
-                            src="/img/icons/linkedin_icon.png"></a>-->
             </div>
 
-            <!--<p>Or download my resume:</p>
-            <a href="pdf/Daniel_Martí_CV.pdf" download>Download</a>-->
+
             <div id="introText">
 
                 <h1>Hello :)</h1>
@@ -50,12 +35,6 @@
                 </h1>
                 <p>Want to contact? Send me an email at <a href="mailto: dmarticasanova@gmail.com"
                         style="font-weight: 900;">dmarticasanova@gmail.com</a></p>
-
-
-                <button type="submit" class="outline button" id="downloadButton"
-                    onclick="window.open('pdf/Daniel_Martí_CV.pdf')">Download
-                    my CV!</button>
-
 
 
             </div>
@@ -72,26 +51,17 @@
                 <h1 class="sectionHeader" style="background-color: var(--green);">About me</h1>
 
                 <p>
-                    I'm a junior software developer specialized in game development, graphics and simulations. I'm
-                    always learnign about new stuff and love writing code that pushes the possibilities of modern
-                    hardware.
+                    I'm a software developer specialized in game development, graphics, and simulations. I'm
+                    passionate about exploring new technologies and writing code that pushes the possibilities of modern hardware.
                 </p>
 
                 <ul style="margin-bottom: 100px; text-align: left;">
-                    <li><b>Programming Languages:</b> C++, C#, Python, JavaScript.</li>
-                    <li><b>Frameworks/Engines:</b> Unity, Unreal Engine (Blueprints and C++), Godot, WPF.</li>
-                    <li><b>Development Tools:</b> Git, PlasticSCM, Visual Studio, VS Code.</li>
-                    <li><b>Software Architecture & Design:</b> Entity-Component System (ECS), Design Patterns, SOLID,
-                        OOP (Object-Oriented Programming), DOP (Data-Oriented Programming).</li>
-                    <li><b>Performance Optimization:</b> Multi-threading, Real-Time Systems, Low-Level Memory
-                        Management.</li>
-                    <li><b>Graphics & Rendering:</b> Graphics APIs (OpenGL), Real-Time Rendering, Shaders (GLSL),
-                        Optimization.</li>
-                    <li><b>Simulation & Algorithm Development:</b> Physics Simulation & Modeling, Mathematical
-                        Algorithms for Real-Time Interactions.</li>
-                    <li><b>Project Management & Collaboration:</b> Agile Methodologies, Jira, SCRUM, UML, Trello.</li>
-                    <li><b>Graphics & Content Creation Tools:</b> Blender, 3ds Max, Photoshop, Figma.</li>
-                    <li><b>Languages:</b> Proficient in English (C1 Advanced), Native Spanish and Catalan.</li>
+                    <li><b>Core Technologies:</b> C++, C#, Python, JavaScript.</li>
+                    <li><b>Game Development:</b> Unity, Unreal Engine, Custom Engine Development.</li>
+                    <li><b>Software Architecture:</b> Entity-Component System (ECS), OOP, Data-Oriented Programming, SOLID.</li>
+                    <li><b>Graphics & Simulation:</b> OpenGL, Real-Time Rendering, Shaders (GLSL), Physics Simulation.</li>
+                    <li><b>Other Skills:</b> Optimization, Multithreading, Agile Methodologies, Content Creation Tools.</li>
+                    <li><b>Languages:</b> Proficient in English (C2 Cambridge), Native Spanish and Catalan.</li>
                 </ul>
             </div>
 
@@ -218,121 +188,102 @@
                         </div>
                     </div>
 
-                    <!--POND PLATOON-->
+                    <!--UNIVERSITY PROJECTS-->
                     <div>
                         <div class="game">
-                            <a title="itch.io" href="https://bubblygames.itch.io/pond-platoon" target="_blank">
-                                <img src="/img/projects/pond_platoon.gif" alt="Pond Platoon">
-                                <h3>Pond Platoon</h3>
+                            <a title="University Projects" href="javascript:void(0)" onclick="ShowFloatingDiv('university_projects')">
+                                <img src="/img/projects/pond_platoon.gif" alt="University Projects">
+                                <h3>University Projects</h3>
                             </a>
                             <div class="gameDescription">
-                                <p>A 3D tower defense game about frogs.</p>
+                                <p>A collection of games, simulations, and technical projects I built during my computer science degree.</p>
 
                                 <div>
                                     <input type="button" class="button learnMoreButton"
-                                        onclick="ShowFloatingDiv('pond_platoon')" value="Learn more..." />
+                                        onclick="ShowFloatingDiv('university_projects')" value="Learn more..." />
                                 </div>
 
                             </div>
 
                             <div class="projectTags">
-                                <p>Procedural generation</p>
-                                <p>C#</p>
-                                <p>Unity</p>
-                                <p>University</p>
+                                <p>Unity & C#</p>
+                                <p>Phaser3</p>
+                                <p>Procedural Gen</p>
+                                <p>Multiplayer</p>
                             </div>
                         </div>
                     </div>
 
-                    <!--SOFT BODY SIMULATION-->
-                    <div>
-                        <div class=" game">
-                            <a title="itch.io" href="https://damaca.itch.io/soft-body-simulation-in-unity"
-                                target="_blank">
-                                <img src="/img/projects/tale_of_the_sea.gif" alt="Cloth simulation">
-                                <h3>Intro to 3D animation</h3>
-                            </a>
-                            <div class="gameDescription">
-                                <p>I designed a character, modelled and animated it and imported it to Unity. Then I
-                                    built my own soft-body simulation animations and added them to the character and the
-                                    enviroment.</p>
-                                <div>
-                                    <input type="button" class="button learnMoreButton"
-                                        onclick="ShowFloatingDiv('soft_body')" value="Learn more..." />
-                                </div>
 
-                            </div>
-
-                            <div class="projectTags">
-                                <p>Art</p>
-                                <p>Physics simulation</p>
-                                <p>3D Animation</p>
-                                <p>C#</p>
-                                <p>Unity</p>
-                                <p>University</p>
-                                <p>Blender</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                    <!--RUINS OF LIGHT-->
-                    <div>
-                        <div class="game">
-                            <a title="itch.io" href="https://damaca.itch.io/ruins-of-light" target="_blank">
-                                <img src="/img/projects/ruins_of_light.gif" alt="Ruins of Light">
-                                <h3>Ruins of Light</h3>
-                            </a>
-                            <div class="gameDescription">
-
-                                <p>A multiplayer web game I made a few years ago with Phaser3.<br>
-                                    It was my first game as a game programmer, and it's a mess. But I learnt a lot
-                                    from
-                                    it.</p>
-
-                            </div>
-
-                            <div class="projectTags">
-                                <p>Online multiplayer</p>
-                                <p>Java</p>
-                                <p>JavaScript</p>
-                                <p>University</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--TUERCAS-->
-                    <!--<div>
-                        <div class="game">
-                            <img src="/img/projects/tuercas.gif" alt="Tuercas">
-                            <h3>My first game ever</h3>
-                            <div class="gameDescription">
-
-                                <p>Back when I was 17, I made this game with zero knowledge of game development. I
-                                    had just
-                                    played Machinarium, and I was in love with its aesthetics, so I tried to emulate
-                                    it. I
-                                    made the sprites with water colors, animated them with After Effects and pasted
-                                    them
-                                    into a pre-made Unity project.</p>
-                            </div>
-
-                            <div class="projectTags">
-                                <p>Art</p>
-                                <p>C#</p>
-                                <p>Unity</p>
-                            </div>
-                        </div>
-                    </div>-->
                 </div>
             </div>
 
-            <script>
-                const scrollableDiv = document.querySelector('#gameList');
+            <!-- Custom Scrollbar -->
+            <div class="custom-scrollbar-container" id="customScrollbar">
+                <div class="custom-scrollbar-thumb" id="customScrollThumb"></div>
+            </div>
 
-                // Add event listener to the div
+            <script>
+                const scrollableDiv = document.querySelector('#gameListContainer');
+                const scrollbarThumb = document.querySelector('#customScrollThumb');
+                const scrollbarContainer = document.querySelector('#customScrollbar');
+
+                // Sync thumb with scroll
+                function updateThumbPosition() {
+                    const scrollPercentage = scrollableDiv.scrollLeft / (scrollableDiv.scrollWidth - scrollableDiv.clientWidth);
+                    const maxThumbLeft = scrollbarContainer.offsetWidth - scrollbarThumb.offsetWidth;
+                    // handle NaN/Infinity if not scrollable
+                    if(Number.isFinite(scrollPercentage) && Number.isFinite(maxThumbLeft)) {
+                        scrollbarThumb.style.left = ((scrollPercentage * maxThumbLeft) - 3) + 'px';
+                    }
+                }
+
+                scrollableDiv.addEventListener('scroll', updateThumbPosition);
+
+                // Sync thumb size based on visible ratio
+                function updateThumbSize() {
+                    if (scrollableDiv.scrollWidth <= scrollableDiv.clientWidth) {
+                        scrollbarContainer.style.display = 'none'; // No scrolling needed
+                    } else {
+                        scrollbarContainer.style.display = 'block';
+                        const visibleRatio = scrollableDiv.clientWidth / scrollableDiv.scrollWidth;
+                        scrollbarThumb.style.width = Math.max(visibleRatio * 100, 10) + '%';
+                        updateThumbPosition();
+                    }
+                }
+
+                window.addEventListener('resize', updateThumbSize);
+                // Call initially to set size
+                setTimeout(updateThumbSize, 100);
+
+                // Mouse drag for thumb
+                let isDragging = false;
+                let startX;
+                let startScrollLeft;
+
+                scrollbarThumb.addEventListener('mousedown', (e) => {
+                    isDragging = true;
+                    startX = e.pageX;
+                    startScrollLeft = scrollableDiv.scrollLeft;
+                    document.body.style.userSelect = 'none';
+                });
+
+                document.addEventListener('mousemove', (e) => {
+                    if (!isDragging) return;
+                    const dx = e.pageX - startX;
+                    const maxThumbLeft = scrollbarContainer.offsetWidth - scrollbarThumb.offsetWidth;
+                    const maxScrollLeft = scrollableDiv.scrollWidth - scrollableDiv.clientWidth;
+                    const scrollRatio = maxScrollLeft / maxThumbLeft;
+                    
+                    scrollableDiv.scrollLeft = startScrollLeft + (dx * scrollRatio);
+                });
+
+                document.addEventListener('mouseup', () => {
+                    isDragging = false;
+                    document.body.style.userSelect = '';
+                });
+
+                // Add event listener to the div for mouse wheel
                 scrollableDiv.addEventListener('wheel', function (event) {
                     if (event.deltaY !== 0) { // Only respond to vertical scrolling
                         event.preventDefault(); // Prevent default vertical scroll

@@ -1,91 +1,195 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Daniel Martí</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <meta charset="utf-8">
+    <title>Daniel Martí - Weird Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/projectPage.css">
+    <style>
+        html, body {
+            background-color: var(--yellow);
+            color: var(--grey);
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1.main-title {
+            font-size: 3.5rem;
+            margin: 0 0 1rem 0;
+            color: var(--grey);
+            font-family: var(--main-font);
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--grey);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .project-section {
+            margin-bottom: 4rem;
+            background: transparent;
+        }
+
+        .media-container {
+            position: relative;
+            width: 100%;
+            background: var(--grey);
+            margin-bottom: 2.5rem;
+            overflow: hidden;
+        }
+
+        .media-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-title {
+            font-size: 2.5rem;
+            color: var(--grey);
+            margin: 0 0 1.5rem 0;
+            font-family: var(--main-font);
+            padding-left: 1rem;
+            border-left: 6px solid var(--green);
+        }
+
+        .section-heading {
+            font-size: 1.75rem;
+            color: var(--grey);
+            margin: 2.5rem 0 1rem 0;
+            font-family: var(--main-font);
+            padding-left: 0.75rem;
+            border-left: 4px solid var(--orange);
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background-color: var(--white);
+            border-left: 4px solid var(--green);
+        }
+
+        .meta-item span {
+            display: block;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+            color: var(--grey);
+            opacity: 0.8;
+        }
+
+        .meta-item strong {
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        .description p {
+            margin: 0 0 1.5rem 0;
+        }
+        
+        .description ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .description li {
+            margin-bottom: 0.75rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2.5rem;
+            align-items: start;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="content">
-        <div class="cover">
-            <video style="width: 100%; object-fit: cover;" autoplay loop>
-                <source src="../img/projects/weird-engine/weird-engine.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+    <div class="container">
+        
+        <header>
+            <h1 class="main-title">Weird Engine</h1>
+            <p class="subtitle">Building a custom 2D game engine in C++ with OpenGL and custom physics using Signed Distance Functions (SDFs).</p>
+        </header>
 
-        <h1 style="text-align: center;">Weird Engine</h1>
-        <div class="projectInfo">
-            <p>
-                <b>Engine:</b><br>
-                Unity<br><br>
-                <b>Size of the team:</b><br>
-                6<br><br>
-                <b>Time:</b><br>
-                4 months<br><br>
-                <b>My role:</b><br>
-                Programmer<br><br>
-            </p>
-        </div>
+        <article class="project-section">
+            <div class="media-container">
+                <video autoplay loop muted playsinline>
+                    <source src="../img/projects/weird-engine/weird-engine.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
 
-        <div class="projectContent" style="min-height: 100%;">
+            <div class="meta-grid">
+                <div class="meta-item"><span>Language</span><strong>C++</strong></div>
+                <div class="meta-item"><span>Graphics API</span><strong>OpenGL</strong></div>
+                <div class="meta-item"><span>Architecture</span><strong>ECS System</strong></div>
+                <div class="meta-item"><span>Rendering</span><strong>SDF Ray Marching</strong></div>
+            </div>
 
-            <h2>Summary</h2>
-            <p>A 2D game engine in C++ with OpenGL, using signed distance functions (SDFs) for rendering and physics.
-                Key features:</p>
-            <ul>
-                <li>ECS architecture to structure and connect components.</li>
-                <li>Custom physics engine optimized for SDFs.</li>
-                <li>Fast SDF renderer.</li>
-            </ul>
+            <div class="description">
+                <h2 class="section-heading">Summary</h2>
+                <p>A custom 2D game engine built from scratch in C++ with OpenGL, utilizing signed distance functions (SDFs) for both rendering and physics calculations.</p>
+                <ul>
+                    <li><strong>ECS Architecture:</strong> Designed a light Entity Component System to structure components cleanly and keep logic decoupled.</li>
+                    <li><strong>Custom Physics Engine:</strong> Optimized collision detection and response specifically for Signed Distance Fields.</li>
+                    <li><strong>Fast SDF Renderer:</strong> High-performance GLSL ray marching shaders adapted for 2D real-time simulation.</li>
+                </ul>
 
-            <h2>The story</h2>
+                <h2 class="section-heading">The Story & Architecture</h2>
+                <p>This project originally started as an ambitious 3D renderer engine that seamlessly combined traditional triangle rasterization with 3D SDF Ray Marching. While achieving hybrid rendering was a rewarding challenge, scaling 3D ray marching for complex scenes exposed major performance bottlenecks without complex acceleration structures.</p>
+                
+                <p>The retro aesthetics were a technical constraint rather than purely stylistic: because rendering complexity grew exponentially with object count, moving the engine to 2D allowed adapting the rendering pipeline to scale linearly. As an added bonus, 2D physics required less complexity, enabling the custom physics solver to comfortably run thousands of objects simultaneously.</p>
+            </div>
 
-            <p>
-                This project started as a 3D renderer engine that seamlessly combined traditional triangle rasterization
-                with SDF Ray Marching. This was quite a challenge, but eventually I got it working as intended.<br>
-            </p>
-
-            <img src="../img/projects/weird-engine/3d.png">
-
-            <p>
-                Then I decided I wanted to turn it into a usable engine, but I quickly realized the scale of what I was
-                trying to do and the implications of trying to get an acceptable performance using such an expensive
-                rendering technique.<br>
-            </p>
-
-            <p>
-                The retro aesthetics were not a design choice, but rather a technical limitation. The rendering
-                algorithm's complexity grew exponentially with the amount of objects, so it required implementing
-                complex acceleration structures, similar to the ones used for ray tracing. Baking static SDFs to meshes
-                was also an option, but it would lose most of its charm.<br>
-            </p>
-
-            <p>
-                Then came the idea of moving to 2D. Scaling down meant the project would be in a more realistic scope.
-                In 2D, I could easily adapt the rendering method to grow linearly.<br>
-            </p>
-
-            <p>
-                As a side bonus, 2D physics are way less complex, and this allowed my little physics engine to run
-                thousands of objects easily.<br>
-            </p>
-
-            <img src="../img/projects/weird-engine/bigSimulation.png">
-
-            <h2>How does it work?</h2>
-            <p>WIP...</p>
-
-        </div>
-
-
+            <div class="gallery">
+                <img src="../img/projects/weird-engine/3d.png" alt="3D Hybrid Renderer Prototype">
+                <img src="../img/projects/weird-engine/bigSimulation.png" alt="2D Mass Particle & Physics Simulation">
+                <img src="../img/projects/weird-engine/weird-engine.gif" alt="Weird Engine Demo GIF">
+            </div>
+        </article>
 
     </div>
 </body>
-
 </html>
