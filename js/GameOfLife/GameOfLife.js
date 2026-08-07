@@ -24,9 +24,9 @@ var world = new Mundo();
 world.RandomStart();
 
 
-/*canvas.addEventListener('mousedown', function (e) {
-  //world.GetInput(canvas, e)
-})*/
+canvas.addEventListener('mousemove', function (e) {
+  world.SetAlive(canvas, e);
+});
 
 
 window.addEventListener('keydown', (e) => {

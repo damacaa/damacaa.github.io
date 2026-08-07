@@ -50,7 +50,7 @@ function Mundo() {
 
     for (var i = 0; i < this.cells.length; i++) {
       for (var j = 0; j < this.cells[i].length; j++) {
-        this.cells[i][j] = new Celula(Math.round(Math.random()), i * this.tamCelX, j * this.tamCelY, this.tamCelX, this.tamCelY);
+        this.cells[i][j] = new Celula(Math.round(Math.pow(Math.random(), 5)), i * this.tamCelX, j * this.tamCelY, this.tamCelX, this.tamCelY);
         this.cells[i][j].Draw();
       }
     }
@@ -120,6 +120,19 @@ function Mundo() {
     var y = Math.floor((event.clientY - rect.top) / canvas.height * this.filas);
 
     this.cells[x][y].ProcessInput();
+    this.cells[x][y].Draw();
+  }
+
+  this.SetAlive = function (canvas, event) {
+    //Obtiene las coordenadas del ratón y marca la célula en dicha posición como viva
+    const rect = canvas.getBoundingClientRect()
+    var x = Math.floor((event.clientX - rect.left) / canvas.width * this.columnas);
+    var y = Math.floor((event.clientY - rect.top) / canvas.height * this.filas);
+
+    if (x < 0 || x >= this.columnas || y < 0 || y >= this.filas)
+      return;
+
+    this.cells[x][y].nextLife = 1;
     this.cells[x][y].Draw();
   }
 

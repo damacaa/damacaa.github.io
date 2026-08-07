@@ -668,6 +668,28 @@ pre {
     background-color: var(--white);
 }
 
+.gameOfLifeCaption {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    margin: 0;
+
+    font-family: var(--alternative-font);
+    font-size: 0.8em;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: var(--grey);
+    opacity: 0.5;
+
+    max-width: 80%;
+    pointer-events: none;
+}
+
 #aboutMe canvas {
     width: 100%;
     height: 100%;
