@@ -351,15 +351,17 @@ br {
 }
 
 #gameListContainer {
-    overflow-x: auto;
+    background-color: var(--red);
+    border-radius: var(--border-radius-big);
+    border-width: 3px;
+    border-color: var(--grey);
+    border-style: solid;
+
+    overflow: hidden;
     margin: 0 0 2% 0;
-    padding-bottom: 0px;
-    /* Hide native scrollbar */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-#gameListContainer::-webkit-scrollbar {
-    display: none;
+
+    padding: 2em 0em;
+    box-sizing: border-box;
 }
 
 /* Custom Scrollbar */
@@ -390,21 +392,23 @@ br {
 }
 
 #gameList {
-    background-color: var(--red);
-    border-radius: var(--border-radius-big);
-    border-width: 3px;
-    border-color: var(--grey);
-    border-style: solid;
-
     display: flex;
     gap: 20px;
     justify-content: left;
 
-    padding: 2em 2em;
-    width: max-content;
-    min-width: 100%;
+    overflow-x: auto;
 
-    scroll-behavior: smooth;
+    /* Hide native scrollbar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 0em 2em;
+    padding-bottom: 10px;
+}
+#gameList::-webkit-scrollbar {
+    display: none;
+}
+#gameList > div {
+    flex-shrink: 0;
 }
 
 @media screen and (orientation:portrait) {

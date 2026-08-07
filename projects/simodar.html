@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daniel Martí - Simodar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        html, body {
+            background-color: var(--yellow);
+            color: var(--grey);
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1.main-title {
+            font-size: 3.5rem;
+            margin: 0 0 1rem 0;
+            color: var(--grey);
+            font-family: var(--main-font);
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--grey);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .project-section {
+            margin-bottom: 4rem;
+            background: transparent;
+        }
+
+        .media-container {
+            position: relative;
+            width: 100%;
+            background: var(--grey);
+            margin-bottom: 2.5rem;
+            overflow: hidden;
+        }
+
+        .media-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-title {
+            font-size: 2.5rem;
+            color: var(--grey);
+            margin: 0 0 1.5rem 0;
+            font-family: var(--main-font);
+            padding-left: 1rem;
+            border-left: 6px solid var(--green);
+        }
+
+        .section-heading {
+            font-size: 1.75rem;
+            color: var(--grey);
+            margin: 2.5rem 0 1rem 0;
+            font-family: var(--main-font);
+            padding-left: 0.75rem;
+            border-left: 4px solid var(--orange);
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background-color: var(--white);
+            border-left: 4px solid var(--green);
+        }
+
+        .meta-item span {
+            display: block;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+            color: var(--grey);
+            opacity: 0.8;
+        }
+
+        .meta-item strong {
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        .description p {
+            margin: 0 0 1.5rem 0;
+        }
+        
+        .description ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .description li {
+            margin-bottom: 0.75rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2.5rem;
+            align-items: start;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: none;
+            box-shadow: none;
+        }
+
+        .external-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--green);
+            color: var(--grey);
+            text-decoration: none;
+            font-weight: 700;
+            border: var(--border-width) solid var(--grey);
+            border-radius: var(--border-radius-big);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1 class="main-title">Simodar - LSyM</h1>
+            <p class="subtitle">Building training simulators for heavy machinery using C++ with OpenSceneGraph and NVIDIA PhysX.</p>
+        </header>
+
+        <article class="project-section">
+            <div class="media-container">
+                <img src="../img/projects/simodar/lsym.jpg" alt="Simodar High-end Simulator Cabin">
+            </div>
+
+            <div class="meta-grid">
+                <div class="meta-item"><span>Language</span><strong>C++</strong></div>
+                <div class="meta-item"><span>Graphics</span><strong>OpenSceneGraph (OpenGL)</strong></div>
+                <div class="meta-item"><span>Libraries</span><strong>NVIDIA PhysX, wxForms, FMOD, OpenXR</strong></div>
+                <div class="meta-item"><span>Domains</span><strong>Harbour, Quarry, Mine, Construction, Farm, Warehouse</strong></div>
+            </div>
+
+            <div class="description">
+                <h2 class="section-heading">Summary</h2>
+                <p>I currently work at Simodar, the brand of LSyM (Laboratorio de Simulación y Modelado), a research group from the Institute of Robotics and Information and Communication Technologies (IRTIC) at the University of Valencia. We develop training simulators that let operators learn heavy machinery safely, with no risk to people, machines or the environment.</p>
+                <ul>
+                    <li><strong>Harbour simulators:</strong> Ship-to-shore cranes, RTG cranes, mobile harbour cranes, reach stackers and straddle carriers for port operations.</li>
+                    <li><strong>Quarry and mining simulators:</strong> 360º excavators, mining trucks, wheel loaders, bulldozers and graders.</li>
+                    <li><strong>Construction simulators:</strong> Tower cranes, telehandlers, backhoes and more.</li>
+                    <li><strong>Farm simulators:</strong> Farming tractors and harvesters.</li>
+                    <li><strong>Warehouse simulators:</strong> Forklifts and high-capacity forklifts.</li>
+                </ul>
+
+                <h2 class="section-heading">Technology</h2>
+                <p>The simulation core is built in C++. Rendering runs on OpenSceneGraph (OSG) on top of OpenGL, physics simulations use NVIDIA PhysX for realistic machine behaviour, contact and materials handling, wxForms powers the UI, FMOD handles audio, and OpenXR is used for virtual reality support. The whole stack is developed in-house, from the virtual environments to the instructor tools used to track operator performance.</p>
+            </div>
+        </article>
+
+    </div>
+</body>
+</html>

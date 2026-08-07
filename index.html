@@ -29,14 +29,13 @@
 
 
             <div id="introText">
-
+            
                 <h1>Hello :)</h1>
-                <h1>My name is <b>Daniel Martí</b> and I make cool games and stuff
-                </h1>
-                <p>Want to contact? Send me an email at <a href="mailto: dmarticasanova@gmail.com"
+                <h1>My name is <b>Daniel Martí</b>. I am a C++ software developer specializing in game engines and interactive
+                    simulations.</h1>
+                <p>Feel free to reach me at <a href="mailto: dmarticasanova@gmail.com"
                         style="font-weight: 900;">dmarticasanova@gmail.com</a></p>
-
-
+            
             </div>
 
             <img id="pixelArtPortrait" src=" /img/pixel_art.png" alt="">
@@ -44,27 +43,28 @@
 
 
         <div id="aboutMe" class="page">
-
-
             <!---->
             <div id="aboutMeText" class="outline">
                 <h1 class="sectionHeader" style="background-color: var(--green);">About me</h1>
-
-                <p>
-                    I'm a software developer specialized in game development, graphics, and simulations. I'm
-                    passionate about exploring new technologies and writing code that pushes the possibilities of modern hardware.
+            
+                <p style="margin-top: 40px; margin-bottom: 10px;">
+                    I am a software developer specializing in C++, physics simulation, and real-time rendering. I have professional
+                    experience engineering large-scale interactive applications, optimizing complex simulations for high-performance
+                    hardware, and building custom game engines from scratch.
                 </p>
-
-                <ul style="margin-bottom: 100px; text-align: left;">
-                    <li><b>Core Technologies:</b> C++, C#, Python, JavaScript.</li>
-                    <li><b>Game Development:</b> Unity, Unreal Engine, Custom Engine Development.</li>
-                    <li><b>Software Architecture:</b> Entity-Component System (ECS), OOP, Data-Oriented Programming, SOLID.</li>
-                    <li><b>Graphics & Simulation:</b> OpenGL, Real-Time Rendering, Shaders (GLSL), Physics Simulation.</li>
-                    <li><b>Other Skills:</b> Optimization, Multithreading, Agile Methodologies, Content Creation Tools.</li>
+            
+                <ul style="margin-bottom: 100px; text-align: left; line-height: 1.6;">
+                    <li><b>Programming Languages:</b> C++, C#, Python, JavaScript (enough to build this website!).</li>
+                    <li><b>Graphics & Physics:</b> OpenGL, OpenSceneGraph (OSG), PhysX, GLSL.</li>
+                    <li><b>Game Engines:</b> Unreal Engine 5 (C++ & Blueprints), Unity, Custom Engine Architecture.</li>
+                    <li><b>Software Architecture:</b> Data-Oriented Design, Entity-Component System (ECS), OOP, SOLID principles.
+                    </li>
+                    <li><b>Tools & Performance:</b> CMake, Git, CI/CD (GitHub Actions), Profiling (Tracy, RenderDoc),
+                        Multithreading, Optimization.</li>
                     <li><b>Languages:</b> Proficient in English (C2 Cambridge), Native Spanish and Catalan.</li>
                 </ul>
             </div>
-
+            
             <div class="pageBackground">
                 <canvas id="gameOfLifeCanvas" onclick="world.RandomStart();">
                 </canvas>
@@ -76,10 +76,40 @@
         </div>
 
         <div id="projects" class="page">
-            <h1 class="sectionHeader" style="background-color: var(--yellow);">Recent projects</h1>
+            <h1 class="sectionHeader" style="background-color: var(--yellow);">Projects</h1>
             <div id="gameListContainer">
                 <div id="gameList">
 
+
+                    <!--SIMODAR --->
+                    <div>
+                        <div class="game">
+                            <a title="website" href="https://www.simodar.com/" target="_blank">
+                                <img src="/img/projects/simodar/lsym.jpg" alt="Simodar">
+                                <h3>Simodar - LSyM</h3>
+                            </a>
+                            <div class="gameDescription">
+                                <p>Building training simulators for harbour, quarry, mine, construction, farm and
+                                    warehouse machinery using C++ with OpenSceneGraph and NVIDIA PhysX.</p>
+
+                                <div>
+                                    <input type="button" class="button learnMoreButton"
+                                        onclick="ShowFloatingDiv('simodar')" value="Learn more..." />
+                                </div>
+
+                            </div>
+
+                            <div class="projectTags">
+                                <p>C++</p>
+                                <p>OpenSceneGraph</p>
+                                <p>PhysX</p>
+                                <p>wxForms</p>
+                                <p>FMOD</p>
+                                <p>OpenXR</p>
+                                <p>Simulators</p>
+                            </div>
+                        </div>
+                    </div>
 
                     <!--WEIRD-ENGINE-->
                     <div>
@@ -111,7 +141,7 @@
                     <div>
                         <div class="game">
                             <a title="website" href="https://www.sngular.com/" target="_blank">
-                                <img src="/img/projects/sngular/primer-equipo.gif" alt="SNGULAR">
+                                <img src="/img/projects/sngular/big_logo.jpeg" alt="SNGULAR">
                                 <h3>SNGULAR Studios</h3>
                             </a>
                             <div class="gameDescription">
@@ -140,7 +170,7 @@
                     <div>
                         <div class="game">
                             <a title="itch.io" href="https://damaca.itch.io/same-boat" target="_blank">
-                                <img src="/img/projects/same_boat.gif" alt="We're in the Same Boat">
+                                <img src="/img/projects/SameBoat/gameplay.gif" alt="We're in the Same Boat">
                                 <h3>We're in the Same Boat</h3>
                             </a>
 
@@ -224,7 +254,7 @@
             </div>
 
             <script>
-                const scrollableDiv = document.querySelector('#gameListContainer');
+                const scrollableDiv = document.querySelector('#gameList');
                 const scrollbarThumb = document.querySelector('#customScrollThumb');
                 const scrollbarContainer = document.querySelector('#customScrollbar');
 
@@ -317,7 +347,7 @@
 
             <div id="bussinessCard" class="outline">
 
-                <h1 class="sectionHeader" id="cardHeader">Bussiness card (Get in touch!)</h1>
+                <h1 class="sectionHeader" id="cardHeader">Business card (Get in touch!)</h1>
 
                 <div id="cardContent">
 
