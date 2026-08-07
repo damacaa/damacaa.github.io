@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Daniel Martí - Weird Engine</title>
+    <title>Daniel Martí - Simodar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <style>
@@ -58,7 +58,7 @@
             overflow: hidden;
         }
 
-        .media-container video {
+        .media-container img {
             width: 100%;
             height: auto;
             display: block;
@@ -142,32 +142,18 @@
             height: auto;
             border: none;
             box-shadow: none;
-            cursor: zoom-in;
         }
 
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.85);
-            z-index: 1000;
-            cursor: zoom-out;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .lightbox.visible {
-            display: flex;
-        }
-
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border: none;
-            box-shadow: none;
+        .external-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--green);
+            color: var(--grey);
+            text-decoration: none;
+            font-weight: 700;
+            border: var(--border-width) solid var(--grey);
+            border-radius: var(--border-radius-big);
         }
     </style>
 </head>
@@ -175,74 +161,38 @@
     <div class="container">
         
         <header>
-            <h1 class="main-title">Weird Engine</h1>
-            <p class="subtitle">Building a custom 2D game engine in C++ with OpenGL and custom physics using Signed Distance Functions (SDFs).</p>
+            <h1 class="main-title">Simodar - LSyM</h1>
+            <p class="subtitle">Building training simulators for heavy machinery using C++ with OpenSceneGraph and NVIDIA PhysX.</p>
         </header>
 
         <article class="project-section">
             <div class="media-container">
-                <video autoplay loop muted playsinline>
-                    <source src="../img/projects/weird-engine/weird-engine.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <img src="../img/projects/simodar/lsym.jpg" alt="Simodar High-end Simulator Cabin">
             </div>
 
             <div class="meta-grid">
                 <div class="meta-item"><span>Language</span><strong>C++</strong></div>
-                <div class="meta-item"><span>Graphics API</span><strong>OpenGL</strong></div>
-                <div class="meta-item"><span>Architecture</span><strong>ECS System</strong></div>
-                <div class="meta-item"><span>Rendering</span><strong>SDF Ray Marching</strong></div>
+                <div class="meta-item"><span>Graphics</span><strong>OpenSceneGraph (OpenGL)</strong></div>
+                <div class="meta-item"><span>Libraries</span><strong>NVIDIA PhysX, wxForms, FMOD, OpenXR</strong></div>
+                <div class="meta-item"><span>Domains</span><strong>Harbour, Quarry, Mine, Construction, Farm, Warehouse</strong></div>
             </div>
 
             <div class="description">
                 <h2 class="section-heading">Summary</h2>
-                <p>A custom 2D game engine built from scratch in C++ with OpenGL, utilizing signed distance functions (SDFs) for both rendering and physics calculations.</p>
+                <p>I currently work at Simodar, the brand of LSyM (Laboratorio de Simulación y Modelado), a research group from the Institute of Robotics and Information and Communication Technologies (IRTIC) at the University of Valencia. We develop training simulators that let operators learn heavy machinery safely, with no risk to people, machines or the environment.</p>
                 <ul>
-                    <li><strong>ECS Architecture:</strong> Designed a light Entity Component System to structure components cleanly and keep logic decoupled.</li>
-                    <li><strong>Custom Physics Engine:</strong> Optimized collision detection and response specifically for Signed Distance Fields.</li>
-                    <li><strong>Fast SDF Renderer:</strong> High-performance GLSL ray marching shaders adapted for 2D real-time simulation.</li>
+                    <li><strong>Harbour simulators:</strong> Ship-to-shore cranes, RTG cranes, mobile harbour cranes, reach stackers and straddle carriers for port operations.</li>
+                    <li><strong>Quarry and mining simulators:</strong> 360º excavators, mining trucks, wheel loaders, bulldozers and graders.</li>
+                    <li><strong>Construction simulators:</strong> Tower cranes, telehandlers, backhoes and more.</li>
+                    <li><strong>Farm simulators:</strong> Farming tractors and harvesters.</li>
+                    <li><strong>Warehouse simulators:</strong> Forklifts and high-capacity forklifts.</li>
                 </ul>
 
-                <h2 class="section-heading">The Story & Architecture</h2>
-                <p>This project originally started as an ambitious 3D renderer engine that seamlessly combined traditional triangle rasterization with 3D SDF Ray Marching. While achieving hybrid rendering was a rewarding challenge, scaling 3D ray marching for complex scenes exposed major performance bottlenecks without complex acceleration structures.</p>
-                
-                <p>The retro aesthetics were a technical constraint rather than purely stylistic: because rendering complexity grew exponentially with object count, moving the engine to 2D allowed adapting the rendering pipeline to scale linearly. As an added bonus, 2D physics required less complexity, enabling the custom physics solver to comfortably run thousands of objects simultaneously.</p>
-            </div>
-
-            <div class="gallery">
-                <img src="../img/projects/weird-engine/3d.png" alt="3D Hybrid Renderer Prototype">
-                <img src="../img/projects/weird-engine/bigSimulation.png" alt="2D Mass Particle & Physics Simulation">
-                <img src="../img/projects/weird-engine/weird-engine.gif" alt="Weird Engine Demo GIF">
+                <h2 class="section-heading">Technology</h2>
+                <p>The simulation core is built in C++. Rendering runs on OpenSceneGraph (OSG) on top of OpenGL, physics simulations use NVIDIA PhysX, wxForms powers the UI, FMOD handles audio, and OpenXR is used for virtual reality support. The whole stack is developed in-house, from the virtual environments to the instructor tools used to track operator performance.</p>
             </div>
         </article>
 
     </div>
-
-    <div class="lightbox">
-        <img src="" alt="">
-    </div>
-
-    <script>
-        const lightbox = document.querySelector('.lightbox');
-        const lightboxImg = lightbox.querySelector('img');
-
-        document.querySelectorAll('.gallery img').forEach(img => {
-            img.addEventListener('click', () => {
-                lightboxImg.src = img.src;
-                lightboxImg.alt = img.alt;
-                lightbox.classList.add('visible');
-            });
-        });
-
-        lightbox.addEventListener('click', () => {
-            lightbox.classList.remove('visible');
-        });
-
-        document.addEventListener('keydown', e => {
-            if (e.key === 'Escape') {
-                lightbox.classList.remove('visible');
-            }
-        });
-    </script>
 </body>
 </html>

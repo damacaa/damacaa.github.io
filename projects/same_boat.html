@@ -1,123 +1,265 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Daniel Martí</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <meta charset="utf-8">
+    <title>Daniel Martí - We're in the Same Boat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/projectPage.css">
+    <style>
+        html, body {
+            background-color: var(--yellow);
+            color: var(--grey);
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1.main-title {
+            font-size: 3.5rem;
+            margin: 0 0 1rem 0;
+            color: var(--grey);
+            font-family: var(--main-font);
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--grey);
+            max-width: 650px;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        .store-badge {
+            height: 50px;
+            width: auto;
+            transition: transform 0.15s ease;
+        }
+
+        .store-badge:hover {
+            transform: scale(1.05);
+        }
+
+        .project-section {
+            margin-bottom: 4rem;
+            background: transparent;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            background: var(--grey);
+            margin-bottom: 2.5rem;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .project-title {
+            font-size: 2.5rem;
+            color: var(--grey);
+            margin: 0 0 1.5rem 0;
+            font-family: var(--main-font);
+            padding-left: 1rem;
+            border-left: 6px solid var(--red);
+        }
+
+        .section-heading {
+            font-size: 1.75rem;
+            color: var(--grey);
+            margin: 2.5rem 0 1rem 0;
+            font-family: var(--main-font);
+            padding-left: 0.75rem;
+            border-left: 4px solid var(--red);
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background-color: var(--white);
+            border-left: 4px solid var(--red);
+        }
+
+        .meta-item span {
+            display: block;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+            color: var(--grey);
+            opacity: 0.8;
+        }
+
+        .meta-item strong {
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        .description p {
+            margin: 0 0 1.5rem 0;
+        }
+        
+        .description ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .description li {
+            margin-bottom: 0.75rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+            align-items: start;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: none;
+            box-shadow: none;
+            cursor: zoom-in;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox.visible {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="content">
-        <div class="cover">
-            <iframe width="960" height="600" src="https://www.youtube.com/embed/jpt69dz71fM"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
+    <div class="container">
+        
+        <header>
+            <h1 class="main-title">We're in the Same Boat</h1>
+            <p class="subtitle">A polished river-crossing puzzle game created for GitHub's Game Off 2022, placing 23rd overall.</p>
+            <div>
+                <a href="https://play.google.com/store/apps/details?id=com.damaca.sameboat" target="_blank">
+                    <img src="../img/icons/play_store/GetItOnGooglePlay_Badge_Web_color_English.png" alt="Get it on Google Play" class="store-badge">
+                </a>
+            </div>
+        </header>
 
-        <a href="https://play.google.com/store/apps/details?id=com.damaca.sameboat" target="_blank">
-            <img src="../img/icons/play_store/GetItOnGooglePlay_Badge_Web_color_English.png">
-        </a>
+        <article class="project-section">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/jpt69dz71fM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
 
-        <h1 style="text-align: center;">We're in the Same Boat</h1>
-        <div class="projectInfo">
-            <p>
-                <b>Engine:</b><br>
-                Unity<br>
-                <b>Size of the team:</b><br>
-                4<br>
-                <b>Time:</b><br>
-                1 month<br>
-                <b>My role:</b><br>
-                Game programmer and designer<br>
-            </p>
-        </div>
+            <div class="meta-grid">
+                <div class="meta-item"><span>Engine</span><strong>Unity (C#)</strong></div>
+                <div class="meta-item"><span>Role</span><strong>Programmer & Designer</strong></div>
+                <div class="meta-item"><span>Team Size</span><strong>4 Members</strong></div>
+                <div class="meta-item"><span>Timeline</span><strong>1 Month</strong></div>
+                <div class="meta-item"><span>Achievement</span><strong>23rd / 500+ (GitHub Game Off 2022)</strong></div>
+            </div>
 
-        <div class="projectContent">
+            <div class="description">
+                <p>Created for the <strong>GitHub Game Off 2022</strong> game jam, <em>We're in the Same Boat</em> reimagines classic river-crossing riddles into a highly polished, interactive puzzle experience for web and mobile devices.</p>
 
+                <ul>
+                    <li>Implemented full gameplay mechanics, rules engine, and character interaction logic.</li>
+                    <li>Developed an automated puzzle solver using the A* search algorithm to evaluate solvability and calculate optimal move counts for level design.</li>
+                    <li>Wrote custom water shaders and procedural character animation systems.</li>
+                    <li>Designed an intuitive drag-and-drop touch control scheme and built an unlimited undo/redo movement history system.</li>
+                </ul>
 
+                <h2 class="section-heading">Gameplay & Controls</h2>
+                <p>Although initially created for PC, the controls were designed around touch interactions for mobile devices. Fine-tuning the drag-and-drop responsiveness was critical to achieving an intuitive, satisfying puzzle experience.</p>
+                <p>Because puzzle games punish unforced mistakes, the state architecture was engineered from day one to support seamless unlimited move undos and redos.</p>
 
+                <h2 class="section-heading">Level Design & Auto-Solver</h2>
+                <p>Level progression blends classical river riddles with custom rule combinations. To streamline level design and verify that complex rule setups were solvable, I implemented an automated A* solver. The solver instantly verifies level validity and calculates the minimum number of steps required to win.</p>
+            </div>
 
-            <p>This game was made for the <a href="https://itch.io/jam/game-off-2022" target="_blank">Game
-                    Off 2022</a> hosted by
-                GitHub. It did pretty well, thanks to the fact that it was very
-                polished, and that we had a brilliant graphic designer on our team who
-                didn't have any experience making art for games but did an amazing job
-                anyways. We got the 23rd position overall.
-
-            <ul>
-                <li>I implemented all of the game mechanics and logic of the game.</li>
-                <li>I made a
-                    system to easily create puzzles with a set of characters and rules.</li>
-                <li>I implemented a
-                    solver to automatically ensure that every level can be solved and get
-                    the
-                    optimal
-                    set of
-                    moves to complete it.</li>
-                <li>I made a custom water shader.</li>
-                <li>I procedurally animated the characters.</li>
-            </ul>
-
-            The goal of this project was to make a game that felt very polished. As a side project, we didn't
-            have much time to spend on it, so we made sure to make something small that we knew we could finish.
-
-            The river-crossing riddle has been coded in such a way that it requires creative thinking and
-            problem-solving skills, making it an enjoyable game for players of all ages. The game's visuals and
-            sound effects complete the package, adding to the overall experience and making it a great game for
-            everyone.
-
-            <h2>Gameplay</h2>
-
-            <img src="../img/projects/SameBoat/same_boat_gameplay1.gif">
-
-            Even though this game was originally built for PC, we knew that we wanted to bring it to smartphones,
-            where we think it would shine. So I built the controls around dragging and dropping and spent a lot of
-            time perfecting the feel of it. I iterated many times until I was happy with how smooth, intuitive, and
-            reliable the controls were.<br>
-
-            <img src="../img/projects/SameBoat/same_boat_gameplay2.gif">
-
-            Having the option to undo a move is very important in a game like this. Having to restart the level
-            after making a mistake would be very frustrating for the players. So, from the beginning, the game logic
-            was designed to easily be able to undo and redo movements as many times as necessary.<br>
-
-            <h2>Level design</h2>
-
-            I designed the levels, and to do that, I looked at the original puzzle and some popular variations.
-            There are a few versions of the original crossing river riddle, each with new rules that completely
-            change the game. The first levels are just an adaptation of these different versions. Same rules but
-            with different characters.<br>
-
-            Once I had the rules implemented, I started building new levels mixing rules from different puzzles, and
-            adding new characters. The result was that once the player had learned the basics, the possibilities
-            were endless. So much so, that we are currently building an automatic puzzle generator capable of
-            creating new levels by mixing the current ones.<br>
-
-            <img src="../img/projects/SameBoat/same_boat_level_config.png">
-
-            When creating new levels it's crucial to have a quick way to determine whether a level can be finished.
-            If I tried to do it manually and found a level that I couldn't beat, I wouldn't be able to determine for
-            sure if the difficulty was too high for me or if the level itself was impossible to solve. That's why I
-            used machine learning, the A* algorithm to be concrete, to build a script that could solve any puzzle.
-            This allows me to completely automate the process of designing levels, as well as find the optimal steps
-            to solve any puzzle.<br>
-
-
-            </p>
-
-            <br><br><br><br>
-
-            </p>
-        </div>
-
-
+            <div class="gallery">
+                <img src="../img/projects/SameBoat/same_boat_level_config.png" alt="Level Config & Design Matrix">
+            </div>
+        </article>
 
     </div>
-</body>
 
+    <div class="lightbox">
+        <img src="" alt="">
+    </div>
+
+    <script>
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        document.querySelectorAll('.gallery img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('visible');
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('visible');
+        });
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
 </html>
