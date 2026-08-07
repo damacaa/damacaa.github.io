@@ -687,7 +687,11 @@ pre {
     opacity: 0.5;
 
     max-width: 80%;
-    pointer-events: none;
+}
+
+.gameOfLifeCaption:hover {
+    opacity: 1.0;
+    transition-duration: 100ms;
 }
 
 #aboutMe canvas {

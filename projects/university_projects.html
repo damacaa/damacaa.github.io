@@ -155,6 +155,32 @@
             height: auto;
             border: none;
             box-shadow: none;
+            cursor: zoom-in;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox.visible {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border: none;
+            box-shadow: none;
         }
 
         a.button {
@@ -169,7 +195,7 @@
         
         <header>
             <h1 class="main-title">University Projects</h1>
-            <p class="subtitle">A collection of foundational games, simulations, and technical projects developed during my computer science degree.</p>
+            <p class="subtitle">A collection of foundational games, simulations, and technical projects developed during my videogame development degree.</p>
         </header>
 
         <!-- POND PLATOON -->
@@ -266,5 +292,32 @@
         </article>
 
     </div>
+
+    <div class="lightbox">
+        <img src="" alt="">
+    </div>
+
+    <script>
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        document.querySelectorAll('.gallery img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('visible');
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('visible');
+        });
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('visible');
+            }
+        });
+    </script>
 </body>
 </html>
